@@ -5,7 +5,6 @@
 #include <fcntl.h>
 #include <unistd.h>
 
-
 int main()
 {
 	pthread_t f2_thread, f1_thread;
@@ -13,9 +12,8 @@ int main()
 	int i1, i2;
 	i1 = 1;
 	i2 = 2;
-	// pthread_create(&f1_thread, NULL, f1, &i1);
-	pthread_create(&f2_thread, NULL, f2, &i2);
 	pthread_create(&f1_thread, NULL, f1, &i1);
+	pthread_create(&f2_thread, NULL, f2, &i2);
 	pthread_join(f1_thread, NULL);
 	pthread_join(f2_thread, NULL);
 }

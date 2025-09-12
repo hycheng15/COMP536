@@ -17,7 +17,7 @@ int main()
 /*thread for the library call version*/
 void *f1(void *x)
 {
-	int *arg = (int *)x;
+	int *arg = (int *)x;	
 	(void)arg;	// prevent unused variable warning
 	long i;
 	FILE *fp;
