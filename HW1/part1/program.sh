@@ -34,8 +34,8 @@ if [ ! -f "$EXECUTABLE" ]; then
 fi
 
 # Clear previous fprint.out and write.out files
-echo "=== Clearing previous fprint.out and write.out files... ==="
-rm -f fprint.out write.out
+echo "=== Clearing previous fprint.out, write.out, and run.txt files... ==="
+rm -f fprint.out write.out run.txt
 
 # Run the program 1000 times and record the patterns of interleaving of “f1” and “f2” calls
 echo "=== Running the program 1000 times... ==="
