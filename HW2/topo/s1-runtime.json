@@ -1,0 +1,19 @@
+{
+  "target": "bmv2",
+  "p4info": "build/ecmp.p4.p4info.txtpb",
+  "bmv2_json": "build/ecmp.json",
+  "table_entries": [
+    {
+      "table": "MyIngress.ecmp_select",
+      "match": { "meta.ecmp_bucket": 0 },
+      "action_name": "MyIngress.set_nhop",
+      "action_params": { "dstAddr": "08:00:00:02:01:00", "port": 2 }
+    },
+    {
+      "table": "MyIngress.ecmp_select",
+      "match": { "meta.ecmp_bucket": 1 },
+      "action_name": "MyIngress.set_nhop",
+      "action_params": { "dstAddr": "08:00:00:03:01:00", "port": 3 }
+    }
+  ]
+}
