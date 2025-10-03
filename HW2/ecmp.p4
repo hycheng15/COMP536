@@ -175,16 +175,16 @@ control MyIngress(inout headers hdr,
         bit<32> h;
 
         // Check which L4 protocol is in use and extract ports accordingly
-        bit<16> l4srcPort = hdr.tcp.isValid() ? hdr.tcp.srcPort : 
-                            hdr.udp.isValid() ? hdr.udp.srcPort : (bit<16>)0;
-        bit<16> l4dstPort = hdr.tcp.isValid() ? hdr.tcp.dstPort :
-                            hdr.udp.isValid() ? hdr.udp.dstPort : (bit<16>)0;
+        bit<16> l4srcPort = (hdr.tcp.isValid()) ? hdr.tcp.srcPort
+                            : ((hdr.udp.isValid()) ? hdr.udp.srcPort : (bit<16>)0);
+        bit<16> l4dstPort = (hdr.tcp.isValid()) ? hdr.tcp.dstPort
+                            : ((hdr.udp.isValid()) ? hdr.udp.dstPort : (bit<16>)0);
 
-        // v1model hash extern: base=0 (no salt), data={fields}
-        hash(h, HashAlgorithm.crc32, 0, { hdr.ipv4.srcAddr,
+        // v1model hash extern: base=0 (no salt), data={fields}, max=0 (no max limit)
+        hash(h, HashAlgorithm.crc32, (bit<32>)0, { hdr.ipv4.srcAddr,
                                           hdr.ipv4.dstAddr,
                                           hdr.ipv4.protocol,
-                                          l4srcPort, l4dstPort }, 0);
+                                          l4srcPort, l4dstPort }, (bit<32>)0);
 
         meta.ecmp_bucket = (bit<8>)(h % NUM_PATHS);
     }
@@ -269,8 +269,8 @@ control MyDeparser(packet_out packet, in headers hdr) {
         packet.emit(hdr.ethernet);
         packet.emit(hdr.first_hop);
         packet.emit(hdr.ipv4);
-        if (hdr.tcp.isValid()) { packet.emit(hdr.tcp); }
-        if (hdr.udp.isValid()) { packet.emit(hdr.udp); }
+        packet.emit(hdr.tcp);
+        packet.emit(hdr.udp);
     }
     
 }
