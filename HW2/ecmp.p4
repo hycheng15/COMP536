@@ -3,8 +3,17 @@
 #include <core.p4>
 #include <v1model.p4>
 
-const bit<16> TYPE_IPV4 = 0x800;
+const bit<16> TYPE_IPV4 = 0x0800;
 const bit<16> TYPE_FIRST_HOP = 0x1234;
+const bit<16> TYPE_QUERY = 0x1235;
+
+/*************************************************************************
+*********************** R E G I S T E R S  *******************************
+*************************************************************************/
+
+// Register to store byte counters for S1 egress ports
+const bit<32> PORTS_MAX = 64;
+register<bit<64>>(PORTS_MAX) port_bytes;
 
 /*************************************************************************
 *********************** H E A D E R S  ***********************************
@@ -61,6 +70,12 @@ header first_hop_t {
     bit<8>   tag;     // Use bit<8> for alignment purposes
 }
 
+// Query header
+header query_t {
+    bit<64>  port_2_bytes;  // The bytes sent to port 2 in S1
+    bit<64>  port_3_bytes;  // The bytes sent to port 3 in S1
+}
+
 struct metadata {
     bit<8> ecmp_bucket;   // 0..NUM_PATHS-1
 }
@@ -71,6 +86,7 @@ struct headers {
     ipv4_t       ipv4;
     tcp_t        tcp;
     udp_t        udp;
+    query_t      query;
 }
 
 /*************************************************************************
@@ -90,6 +106,7 @@ parser MyParser(packet_in packet,
         packet.extract(hdr.ethernet);
         transition select(hdr.ethernet.etherType) {
             TYPE_FIRST_HOP: parse_first_hop;
+            TYPE_QUERY: parse_query;
             TYPE_IPV4: parse_ipv4;
             default: accept;
         }
@@ -98,6 +115,11 @@ parser MyParser(packet_in packet,
     state parse_first_hop {
         packet.extract(hdr.first_hop);
         transition parse_ipv4;
+    }
+
+    state parse_query {
+        packet.extract(hdr.query);
+        transition accept;
     }
 
     state parse_ipv4 {
@@ -208,16 +230,30 @@ control MyIngress(inout headers hdr,
         default_action = NoAction();
     }
 
+    action set_query() {
+        // Send the reply back on the ingress port
+        standard_metadata.egress_spec = standard_metadata.ingress_port;
+
+        // Send reply back to whoever asked (swap MACs, return on ingress port)
+        macAddr_t tmp = hdr.ethernet.srcAddr;
+        hdr.ethernet.srcAddr = hdr.ethernet.dstAddr;
+        hdr.ethernet.dstAddr = tmp;
+    }
+
     apply {
-        if (hdr.ipv4.isValid()) {
+        if (hdr.query.isValid()) {
+            set_query();
+            return;               // skip L3 tables
+        }
+        else if (hdr.ipv4.isValid()) {
             // At S1, use ECMP forwarding
             if (hdr.first_hop.isValid()) {
                 compute_ecmp_hash();
                 ecmp_select.apply();
                 strip_first_hop();
             }
+            // At S2-S4, use regular destination-based forwarding
             else {
-                // At S2-S4, use regular destination-based forwarding
                 ipv4_lpm.apply();
             }
         }
@@ -231,7 +267,32 @@ control MyIngress(inout headers hdr,
 control MyEgress(inout headers hdr,
                  inout metadata meta,
                  inout standard_metadata_t standard_metadata) {
-    apply {  }
+    
+    action answer_query() {
+        bit<64> port_2_bytes;
+        bit<64> port_3_bytes;
+        // port_bytes is a register indexed by egress port
+        port_bytes.read(port_2_bytes, 2);
+        port_bytes.read(port_3_bytes, 3);
+        hdr.query.port_2_bytes = port_2_bytes;
+        hdr.query.port_3_bytes = port_3_bytes;
+    }
+
+    action count_bytes() {
+        bit<32> index = (bit<32>) standard_metadata.egress_port;   // Final port
+        bit<64> bytes;
+        port_bytes.read(bytes, index);
+        bytes = bytes + (bit<64>) standard_metadata.packet_length; // On-wire bytes
+        port_bytes.write(index, bytes);
+    }
+
+    apply {
+        if (hdr.query.isValid()) {
+            answer_query();
+        } else {
+            count_bytes();
+        }
+    }
 }
 
 /*************************************************************************
@@ -271,6 +332,7 @@ control MyDeparser(packet_out packet, in headers hdr) {
         packet.emit(hdr.ipv4);
         packet.emit(hdr.tcp);
         packet.emit(hdr.udp);
+        packet.emit(hdr.query);
     }
     
 }
