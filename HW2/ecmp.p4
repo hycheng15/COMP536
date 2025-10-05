@@ -206,9 +206,9 @@ control MyIngress(inout headers hdr,
         hash(h, HashAlgorithm.crc32, (bit<32>)0, { hdr.ipv4.srcAddr,
                                           hdr.ipv4.dstAddr,
                                           hdr.ipv4.protocol,
-                                          l4srcPort, l4dstPort }, (bit<32>)0);
+                                          l4srcPort, l4dstPort }, NUM_PATHS);
 
-        meta.ecmp_bucket = (bit<8>)(h % NUM_PATHS);
+        meta.ecmp_bucket = (bit<8>) h;
     }
 
     // Action to strip first_hop header and restore EtherType to IPv4
