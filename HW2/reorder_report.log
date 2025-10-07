@@ -1,0 +1,1113 @@
+====== Per-Flow Reordering Report ======
+Captured packets: 918, flows observed: 50
+Flow 1512900202: packets=   8 | global_inv=    0 | local_inv=    0
+Flow 1077677411: packets=   9 | global_inv=    0 | local_inv=    0
+Flow  130026778: packets=  27 | global_inv=    0 | local_inv=    0
+Flow 3882810437: packets=  16 | global_inv=    0 | local_inv=    0
+Flow 1423155117: packets=   5 | global_inv=    0 | local_inv=    0
+Flow 1749977713: packets=  24 | global_inv=    0 | local_inv=    0
+Flow   81428283: packets=  20 | global_inv=    0 | local_inv=    0
+Flow  151803405: packets=   5 | global_inv=    0 | local_inv=    0
+Flow 1778701972: packets=   8 | global_inv=    0 | local_inv=    0
+Flow 2415075506: packets=  24 | global_inv=    0 | local_inv=    0
+Flow 2755542006: packets=  23 | global_inv=    0 | local_inv=    0
+Flow 1872771506: packets=   7 | global_inv=    0 | local_inv=    0
+Flow 2995151800: packets=  30 | global_inv=    0 | local_inv=    0
+Flow  581907674: packets=  27 | global_inv=    0 | local_inv=    0
+Flow 3074614584: packets=  20 | global_inv=    0 | local_inv=    0
+Flow 2290109923: packets=  18 | global_inv=    0 | local_inv=    0
+Flow 1486362665: packets=  28 | global_inv=    0 | local_inv=    0
+Flow 4144769966: packets=  23 | global_inv=    0 | local_inv=    0
+Flow 2882575831: packets=   8 | global_inv=    0 | local_inv=    0
+Flow 1209616154: packets=  13 | global_inv=    0 | local_inv=    0
+Flow 3936314045: packets=  29 | global_inv=    0 | local_inv=    0
+Flow  323142275: packets=  20 | global_inv=    0 | local_inv=    0
+Flow 3593970549: packets=  23 | global_inv=    0 | local_inv=    0
+Flow 4276952708: packets=  12 | global_inv=    0 | local_inv=    0
+Flow 2684576763: packets=  11 | global_inv=    0 | local_inv=    0
+Flow 1729959549: packets=   9 | global_inv=    0 | local_inv=    0
+Flow 1656448490: packets=  11 | global_inv=    0 | local_inv=    0
+Flow 2790312097: packets=   9 | global_inv=    0 | local_inv=    0
+Flow 3095508205: packets=  21 | global_inv=    0 | local_inv=    0
+Flow 2019721596: packets=   5 | global_inv=    0 | local_inv=    0
+Flow 2198599080: packets=  30 | global_inv=    0 | local_inv=    0
+Flow 1696916616: packets=  29 | global_inv=    0 | local_inv=    0
+Flow   49335107: packets=  24 | global_inv=    0 | local_inv=    0
+Flow 2028944365: packets=  29 | global_inv=    0 | local_inv=    0
+Flow 1169992010: packets=  30 | global_inv=    0 | local_inv=    0
+Flow 1554041334: packets=  18 | global_inv=    0 | local_inv=    0
+Flow  760709429: packets=  18 | global_inv=    0 | local_inv=    0
+Flow 2608587541: packets=   5 | global_inv=    0 | local_inv=    0
+Flow 3236467088: packets=  17 | global_inv=    0 | local_inv=    0
+Flow 4078432621: packets=  24 | global_inv=    0 | local_inv=    0
+Flow 2889929918: packets=  27 | global_inv=    0 | local_inv=    0
+Flow 1488639552: packets=  13 | global_inv=    0 | local_inv=    0
+Flow 1587237211: packets=  22 | global_inv=    0 | local_inv=    0
+Flow 2265842446: packets=  12 | global_inv=    0 | local_inv=    0
+Flow 2242256291: packets=  20 | global_inv=    0 | local_inv=    0
+Flow 2937724115: packets=  13 | global_inv=    0 | local_inv=    0
+Flow  231734341: packets=  19 | global_inv=    0 | local_inv=    0
+Flow  465673043: packets=  28 | global_inv=    0 | local_inv=    0
+Flow 3959654226: packets=  23 | global_inv=    0 | local_inv=    0
+Flow 3791937597: packets=  24 | global_inv=    0 | local_inv=    0
+----------------------------------------
+TOTAL: packets=918 | global_inv=0 | local_inv=0
+========================================
+====== Per-Flow Reordering Report ======
+Captured packets: 874, flows observed: 50
+Flow 2108216190: packets=   5 | global_inv=    0 | local_inv=    0
+Flow  287772853: packets=  16 | global_inv=    0 | local_inv=    0
+Flow  679767700: packets=  28 | global_inv=    0 | local_inv=    0
+Flow 3544192894: packets=  23 | global_inv=    0 | local_inv=    0
+Flow 1957202557: packets=   8 | global_inv=    0 | local_inv=    0
+Flow 4088848213: packets=  16 | global_inv=    0 | local_inv=    0
+Flow 1710890231: packets=  26 | global_inv=    0 | local_inv=    0
+Flow 2981534753: packets=  11 | global_inv=    0 | local_inv=    0
+Flow 3563764656: packets=  24 | global_inv=    0 | local_inv=    0
+Flow  339649902: packets=  10 | global_inv=    0 | local_inv=    0
+Flow 2137336362: packets=  18 | global_inv=    0 | local_inv=    0
+Flow 2240304954: packets=  26 | global_inv=    0 | local_inv=    0
+Flow 1271947848: packets=  15 | global_inv=    0 | local_inv=    0
+Flow  474974726: packets=  17 | global_inv=    0 | local_inv=    0
+Flow 4026542066: packets=  12 | global_inv=    0 | local_inv=    0
+Flow   50334437: packets=  19 | global_inv=    0 | local_inv=    0
+Flow 3142144826: packets=  30 | global_inv=    0 | local_inv=    0
+Flow 2416813203: packets=  16 | global_inv=    0 | local_inv=    0
+Flow 2486245815: packets=  17 | global_inv=    0 | local_inv=    0
+Flow  904577061: packets=  12 | global_inv=    0 | local_inv=    0
+Flow 1005183411: packets=  23 | global_inv=    0 | local_inv=    0
+Flow 2391526977: packets=  16 | global_inv=    0 | local_inv=    0
+Flow 1923447908: packets=   9 | global_inv=    0 | local_inv=    0
+Flow 3666397952: packets=  13 | global_inv=    0 | local_inv=    0
+Flow 1332617223: packets=  25 | global_inv=    0 | local_inv=    0
+Flow 3712055436: packets=  19 | global_inv=    0 | local_inv=    0
+Flow  617017475: packets=  13 | global_inv=    0 | local_inv=    0
+Flow 3894433588: packets=  26 | global_inv=    0 | local_inv=    0
+Flow 2658647884: packets=  13 | global_inv=    0 | local_inv=    0
+Flow 2924664523: packets=   9 | global_inv=    0 | local_inv=    0
+Flow 3282656134: packets=  19 | global_inv=    0 | local_inv=    0
+Flow 2679820269: packets=  14 | global_inv=    0 | local_inv=    0
+Flow 2925485421: packets=  18 | global_inv=    0 | local_inv=    0
+Flow 4288540202: packets=  23 | global_inv=    0 | local_inv=    0
+Flow 1386568618: packets=  22 | global_inv=    0 | local_inv=    0
+Flow 4176723323: packets=  30 | global_inv=    0 | local_inv=    0
+Flow 2960150659: packets=  17 | global_inv=    0 | local_inv=    0
+Flow 1167451950: packets=  27 | global_inv=    0 | local_inv=    0
+Flow  623105116: packets=  11 | global_inv=    0 | local_inv=    0
+Flow 2106224749: packets=  19 | global_inv=    0 | local_inv=    0
+Flow 2825851960: packets=  12 | global_inv=    0 | local_inv=    0
+Flow  868832361: packets=   8 | global_inv=    0 | local_inv=    0
+Flow 1860578137: packets=  22 | global_inv=    0 | local_inv=    0
+Flow 4006626171: packets=  25 | global_inv=    0 | local_inv=    0
+Flow 1749411173: packets=  17 | global_inv=    0 | local_inv=    0
+Flow 2768185756: packets=  14 | global_inv=    0 | local_inv=    0
+Flow 3425265043: packets=   6 | global_inv=    0 | local_inv=    0
+Flow 2910551339: packets=  16 | global_inv=    0 | local_inv=    0
+Flow 1832299983: packets=  27 | global_inv=    0 | local_inv=    0
+Flow 2337535344: packets=  12 | global_inv=    0 | local_inv=    0
+----------------------------------------
+TOTAL: packets=874 | global_inv=0 | local_inv=0
+========================================
+====== Per-Flow Reordering Report ======
+Captured packets: 885, flows observed: 50
+Flow 3475944920: packets=   7 | global_inv=    0 | local_inv=    0
+Flow 2347956939: packets=   7 | global_inv=    0 | local_inv=    0
+Flow 1195893405: packets=   8 | global_inv=    0 | local_inv=    0
+Flow  151571751: packets=  25 | global_inv=    0 | local_inv=    0
+Flow 2780077296: packets=   8 | global_inv=    0 | local_inv=    0
+Flow   44508648: packets=   8 | global_inv=    0 | local_inv=    0
+Flow 1632105602: packets=  19 | global_inv=    0 | local_inv=    0
+Flow 3921488653: packets=  30 | global_inv=    0 | local_inv=    0
+Flow 1239038328: packets=   9 | global_inv=    0 | local_inv=    0
+Flow 3968289940: packets=  29 | global_inv=    0 | local_inv=    0
+Flow 3068155614: packets=  30 | global_inv=    0 | local_inv=    0
+Flow 2588890911: packets=  10 | global_inv=    0 | local_inv=    0
+Flow 2905451358: packets=   7 | global_inv=    0 | local_inv=    0
+Flow 3201035418: packets=  16 | global_inv=    0 | local_inv=    0
+Flow  530375994: packets=  25 | global_inv=    0 | local_inv=    0
+Flow 2016528333: packets=  10 | global_inv=    0 | local_inv=    0
+Flow 4012352635: packets=  25 | global_inv=    0 | local_inv=    0
+Flow 4185796386: packets=  28 | global_inv=    0 | local_inv=    0
+Flow 1699748189: packets=  21 | global_inv=    0 | local_inv=    0
+Flow 2096235787: packets=  14 | global_inv=    0 | local_inv=    0
+Flow 2448444184: packets=  30 | global_inv=    0 | local_inv=    0
+Flow  177670276: packets=  23 | global_inv=    0 | local_inv=    0
+Flow  850068859: packets=  12 | global_inv=    0 | local_inv=    0
+Flow  426036683: packets=   5 | global_inv=    0 | local_inv=    0
+Flow  920400208: packets=  26 | global_inv=    0 | local_inv=    0
+Flow  451747892: packets=  22 | global_inv=    0 | local_inv=    0
+Flow 1261579531: packets=   7 | global_inv=    0 | local_inv=    0
+Flow 3246906670: packets=  19 | global_inv=    0 | local_inv=    0
+Flow 4088163613: packets=  21 | global_inv=    0 | local_inv=    0
+Flow 4135711795: packets=  16 | global_inv=    0 | local_inv=    0
+Flow 2397270357: packets=  24 | global_inv=    0 | local_inv=    0
+Flow 1963893667: packets=   6 | global_inv=    0 | local_inv=    0
+Flow 2900732955: packets=  24 | global_inv=    0 | local_inv=    0
+Flow  213664019: packets=  25 | global_inv=    0 | local_inv=    0
+Flow 1791674865: packets=  14 | global_inv=    0 | local_inv=    0
+Flow 4040015153: packets=  30 | global_inv=    0 | local_inv=    0
+Flow 2657102069: packets=  24 | global_inv=    0 | local_inv=    0
+Flow 2614583002: packets=  21 | global_inv=    0 | local_inv=    0
+Flow 1285807837: packets=   6 | global_inv=    0 | local_inv=    0
+Flow 2404380572: packets=  23 | global_inv=    0 | local_inv=    0
+Flow 3521644546: packets=  22 | global_inv=    0 | local_inv=    0
+Flow  131437688: packets=  12 | global_inv=    0 | local_inv=    0
+Flow  814816281: packets=  24 | global_inv=    0 | local_inv=    0
+Flow 3322055479: packets=   6 | global_inv=    0 | local_inv=    0
+Flow 1494796601: packets=  25 | global_inv=    0 | local_inv=    0
+Flow 1816136490: packets=   7 | global_inv=    0 | local_inv=    0
+Flow  656320594: packets=  30 | global_inv=    0 | local_inv=    0
+Flow 1452783527: packets=  24 | global_inv=    0 | local_inv=    0
+Flow 2007943307: packets=   6 | global_inv=    0 | local_inv=    0
+Flow 4284944196: packets=  15 | global_inv=    0 | local_inv=    0
+----------------------------------------
+TOTAL: packets=885 | global_inv=0 | local_inv=0
+========================================
+====== Per-Flow Reordering Report ======
+Captured packets: 844, flows observed: 50
+
+--- Raw packet sequences captured ---
+Flow 1938579205: 25 packets
+  Seqs: 0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24
+Flow 3491498028: 18 packets
+  Seqs: 0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17
+Flow 836138153: 8 packets
+  Seqs: 0, 1, 2, 3, 4, 5, 6, 7
+Flow 2195678521: 10 packets
+  Seqs: 0, 1, 2, 3, 4, 5, 6, 7, 8, 9
+Flow 3840267239: 8 packets
+  Seqs: 0, 1, 2, 3, 4, 5, 6, 7
+Flow 4085544839: 24 packets
+  Seqs: 0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23
+Flow 26643516: 17 packets
+  Seqs: 0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16
+Flow 1940863302: 11 packets
+  Seqs: 0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10
+Flow 1768906363: 25 packets
+  Seqs: 0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24
+Flow 4121689764: 29 packets
+  Seqs: 0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 25, 26, 27, 28
+Flow 3009665773: 18 packets
+  Seqs: 0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17
+Flow 792476250: 27 packets
+  Seqs: 0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 25, 26
+Flow 4231585912: 24 packets
+  Seqs: 0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23
+Flow 1673150978: 27 packets
+  Seqs: 0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 25, 26
+Flow 3351390398: 24 packets
+  Seqs: 0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23
+Flow 3593209981: 8 packets
+  Seqs: 0, 1, 2, 3, 4, 5, 6, 7
+Flow 3972984147: 24 packets
+  Seqs: 0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23
+Flow 44586652: 15 packets
+  Seqs: 0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14
+Flow 3158171894: 9 packets
+  Seqs: 0, 1, 2, 3, 4, 5, 6, 7, 8
+Flow 809978576: 10 packets
+  Seqs: 0, 1, 2, 3, 4, 5, 6, 7, 8, 9
+Flow 930910668: 25 packets
+  Seqs: 0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24
+Flow 1808176868: 7 packets
+  Seqs: 0, 1, 2, 3, 4, 5, 6
+Flow 745623817: 22 packets
+  Seqs: 0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21
+Flow 2045556423: 8 packets
+  Seqs: 0, 1, 2, 3, 4, 5, 6, 7
+Flow 2105421231: 6 packets
+  Seqs: 0, 1, 2, 3, 4, 5
+Flow 3385626565: 12 packets
+  Seqs: 0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11
+Flow 141753154: 15 packets
+  Seqs: 0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14
+Flow 2019860574: 21 packets
+  Seqs: 0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20
+Flow 2684094034: 24 packets
+  Seqs: 0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23
+Flow 3151873017: 11 packets
+  Seqs: 0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10
+Flow 3107241618: 17 packets
+  Seqs: 0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16
+Flow 3077858905: 13 packets
+  Seqs: 0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12
+Flow 827191679: 20 packets
+  Seqs: 0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19
+Flow 3383321101: 13 packets
+  Seqs: 0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12
+Flow 1619710091: 21 packets
+  Seqs: 0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20
+Flow 2415958705: 16 packets
+  Seqs: 0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15
+Flow 3522470400: 22 packets
+  Seqs: 0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21
+Flow 3299432435: 12 packets
+  Seqs: 0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11
+Flow 3105949532: 26 packets
+  Seqs: 0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 25
+Flow 3728607385: 11 packets
+  Seqs: 0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10
+Flow 156615786: 16 packets
+  Seqs: 0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15
+Flow 557219005: 25 packets
+  Seqs: 0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24
+Flow 2650328143: 28 packets
+  Seqs: 0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 25, 26, 27
+Flow 1337877913: 13 packets
+  Seqs: 0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12
+Flow 1148302181: 21 packets
+  Seqs: 0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20
+Flow 1283008130: 11 packets
+  Seqs: 0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10
+Flow 1878960796: 16 packets
+  Seqs: 0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15
+Flow 506838512: 6 packets
+  Seqs: 0, 1, 2, 3, 4, 5
+Flow 603693: 9 packets
+  Seqs: 0, 1, 2, 3, 4, 5, 6, 7, 8
+Flow 2633502112: 16 packets
+  Seqs: 0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15
+----------------------------------------
+Flow 1938579205: packets=  25 | global_inv=    0 | local_inv=    0
+Flow 3491498028: packets=  18 | global_inv=    0 | local_inv=    0
+Flow  836138153: packets=   8 | global_inv=    0 | local_inv=    0
+Flow 2195678521: packets=  10 | global_inv=    0 | local_inv=    0
+Flow 3840267239: packets=   8 | global_inv=    0 | local_inv=    0
+Flow 4085544839: packets=  24 | global_inv=    0 | local_inv=    0
+Flow   26643516: packets=  17 | global_inv=    0 | local_inv=    0
+Flow 1940863302: packets=  11 | global_inv=    0 | local_inv=    0
+Flow 1768906363: packets=  25 | global_inv=    0 | local_inv=    0
+Flow 4121689764: packets=  29 | global_inv=    0 | local_inv=    0
+Flow 3009665773: packets=  18 | global_inv=    0 | local_inv=    0
+Flow  792476250: packets=  27 | global_inv=    0 | local_inv=    0
+Flow 4231585912: packets=  24 | global_inv=    0 | local_inv=    0
+Flow 1673150978: packets=  27 | global_inv=    0 | local_inv=    0
+Flow 3351390398: packets=  24 | global_inv=    0 | local_inv=    0
+Flow 3593209981: packets=   8 | global_inv=    0 | local_inv=    0
+Flow 3972984147: packets=  24 | global_inv=    0 | local_inv=    0
+Flow   44586652: packets=  15 | global_inv=    0 | local_inv=    0
+Flow 3158171894: packets=   9 | global_inv=    0 | local_inv=    0
+Flow  809978576: packets=  10 | global_inv=    0 | local_inv=    0
+Flow  930910668: packets=  25 | global_inv=    0 | local_inv=    0
+Flow 1808176868: packets=   7 | global_inv=    0 | local_inv=    0
+Flow  745623817: packets=  22 | global_inv=    0 | local_inv=    0
+Flow 2045556423: packets=   8 | global_inv=    0 | local_inv=    0
+Flow 2105421231: packets=   6 | global_inv=    0 | local_inv=    0
+Flow 3385626565: packets=  12 | global_inv=    0 | local_inv=    0
+Flow  141753154: packets=  15 | global_inv=    0 | local_inv=    0
+Flow 2019860574: packets=  21 | global_inv=    0 | local_inv=    0
+Flow 2684094034: packets=  24 | global_inv=    0 | local_inv=    0
+Flow 3151873017: packets=  11 | global_inv=    0 | local_inv=    0
+Flow 3107241618: packets=  17 | global_inv=    0 | local_inv=    0
+Flow 3077858905: packets=  13 | global_inv=    0 | local_inv=    0
+Flow  827191679: packets=  20 | global_inv=    0 | local_inv=    0
+Flow 3383321101: packets=  13 | global_inv=    0 | local_inv=    0
+Flow 1619710091: packets=  21 | global_inv=    0 | local_inv=    0
+Flow 2415958705: packets=  16 | global_inv=    0 | local_inv=    0
+Flow 3522470400: packets=  22 | global_inv=    0 | local_inv=    0
+Flow 3299432435: packets=  12 | global_inv=    0 | local_inv=    0
+Flow 3105949532: packets=  26 | global_inv=    0 | local_inv=    0
+Flow 3728607385: packets=  11 | global_inv=    0 | local_inv=    0
+Flow  156615786: packets=  16 | global_inv=    0 | local_inv=    0
+Flow  557219005: packets=  25 | global_inv=    0 | local_inv=    0
+Flow 2650328143: packets=  28 | global_inv=    0 | local_inv=    0
+Flow 1337877913: packets=  13 | global_inv=    0 | local_inv=    0
+Flow 1148302181: packets=  21 | global_inv=    0 | local_inv=    0
+Flow 1283008130: packets=  11 | global_inv=    0 | local_inv=    0
+Flow 1878960796: packets=  16 | global_inv=    0 | local_inv=    0
+Flow  506838512: packets=   6 | global_inv=    0 | local_inv=    0
+Flow     603693: packets=   9 | global_inv=    0 | local_inv=    0
+Flow 2633502112: packets=  16 | global_inv=    0 | local_inv=    0
+----------------------------------------
+TOTAL: packets=844 | global_inv=0 | local_inv=0
+========================================
+====== Per-Flow Reordering Report ======
+Captured packets: 938, flows observed: 50
+
+--- Raw packet sequences captured ---
+Flow 1097907607: 30 packets
+  Seqs: 0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 25, 26, 27, 28, 29
+Flow 568008897: 26 packets
+  Seqs: 0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 25
+Flow 2216654011: 5 packets
+  Seqs: 0, 1, 2, 3, 4
+Flow 1177375927: 29 packets
+  Seqs: 0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 25, 26, 27, 28
+Flow 229618627: 24 packets
+  Seqs: 0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23
+Flow 3899183913: 27 packets
+  Seqs: 0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 25, 26
+Flow 4067140214: 11 packets
+  Seqs: 0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10
+Flow 3451810890: 11 packets
+  Seqs: 0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10
+Flow 1862743518: 5 packets
+  Seqs: 0, 1, 2, 3, 4
+Flow 354546353: 19 packets
+  Seqs: 0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18
+Flow 2466585452: 26 packets
+  Seqs: 0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 25
+Flow 3509656191: 27 packets
+  Seqs: 0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 25, 26
+Flow 2878508179: 21 packets
+  Seqs: 0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20
+Flow 3527450402: 13 packets
+  Seqs: 0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12
+Flow 2804876418: 21 packets
+  Seqs: 0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20
+Flow 580155577: 11 packets
+  Seqs: 0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10
+Flow 2842235887: 13 packets
+  Seqs: 0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12
+Flow 3266543462: 19 packets
+  Seqs: 0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18
+Flow 2529232258: 6 packets
+  Seqs: 0, 1, 2, 3, 4, 5
+Flow 3935357141: 21 packets
+  Seqs: 0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20
+Flow 2376175955: 10 packets
+  Seqs: 0, 1, 2, 3, 4, 5, 6, 7, 8, 9
+Flow 4085706246: 21 packets
+  Seqs: 0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20
+Flow 3893792484: 14 packets
+  Seqs: 0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13
+Flow 1914028001: 20 packets
+  Seqs: 0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19
+Flow 369510220: 21 packets
+  Seqs: 0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20
+Flow 187268030: 19 packets
+  Seqs: 0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18
+Flow 3967429144: 24 packets
+  Seqs: 0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23
+Flow 2758117689: 5 packets
+  Seqs: 0, 1, 2, 3, 4
+Flow 884770709: 21 packets
+  Seqs: 0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20
+Flow 3051174246: 20 packets
+  Seqs: 0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19
+Flow 303738715: 25 packets
+  Seqs: 0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24
+Flow 1383420815: 19 packets
+  Seqs: 0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18
+Flow 246422443: 28 packets
+  Seqs: 0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 25, 26, 27
+Flow 329626491: 24 packets
+  Seqs: 0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23
+Flow 2766184023: 27 packets
+  Seqs: 0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 25, 26
+Flow 2953063524: 11 packets
+  Seqs: 0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10
+Flow 2139640512: 18 packets
+  Seqs: 0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17
+Flow 2700369593: 30 packets
+  Seqs: 0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 25, 26, 27, 28, 29
+Flow 334665202: 14 packets
+  Seqs: 0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13
+Flow 869605761: 16 packets
+  Seqs: 0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15
+Flow 2453803423: 26 packets
+  Seqs: 0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 25
+Flow 3092712593: 12 packets
+  Seqs: 0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11
+Flow 3871046510: 6 packets
+  Seqs: 0, 1, 2, 3, 4, 5
+Flow 1164548020: 27 packets
+  Seqs: 0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 25, 26
+Flow 1249676908: 25 packets
+  Seqs: 0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24
+Flow 466718684: 19 packets
+  Seqs: 0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18
+Flow 2770711549: 16 packets
+  Seqs: 0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15
+Flow 186322766: 12 packets
+  Seqs: 0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11
+Flow 3764679954: 19 packets
+  Seqs: 0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18
+Flow 78112331: 24 packets
+  Seqs: 0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23
+----------------------------------------
+Flow 1097907607: packets=  30 | global_inv=    0 | local_inv=    0
+Flow  568008897: packets=  26 | global_inv=    0 | local_inv=    0
+Flow 2216654011: packets=   5 | global_inv=    0 | local_inv=    0
+Flow 1177375927: packets=  29 | global_inv=    0 | local_inv=    0
+Flow  229618627: packets=  24 | global_inv=    0 | local_inv=    0
+Flow 3899183913: packets=  27 | global_inv=    0 | local_inv=    0
+Flow 4067140214: packets=  11 | global_inv=    0 | local_inv=    0
+Flow 3451810890: packets=  11 | global_inv=    0 | local_inv=    0
+Flow 1862743518: packets=   5 | global_inv=    0 | local_inv=    0
+Flow  354546353: packets=  19 | global_inv=    0 | local_inv=    0
+Flow 2466585452: packets=  26 | global_inv=    0 | local_inv=    0
+Flow 3509656191: packets=  27 | global_inv=    0 | local_inv=    0
+Flow 2878508179: packets=  21 | global_inv=    0 | local_inv=    0
+Flow 3527450402: packets=  13 | global_inv=    0 | local_inv=    0
+Flow 2804876418: packets=  21 | global_inv=    0 | local_inv=    0
+Flow  580155577: packets=  11 | global_inv=    0 | local_inv=    0
+Flow 2842235887: packets=  13 | global_inv=    0 | local_inv=    0
+Flow 3266543462: packets=  19 | global_inv=    0 | local_inv=    0
+Flow 2529232258: packets=   6 | global_inv=    0 | local_inv=    0
+Flow 3935357141: packets=  21 | global_inv=    0 | local_inv=    0
+Flow 2376175955: packets=  10 | global_inv=    0 | local_inv=    0
+Flow 4085706246: packets=  21 | global_inv=    0 | local_inv=    0
+Flow 3893792484: packets=  14 | global_inv=    0 | local_inv=    0
+Flow 1914028001: packets=  20 | global_inv=    0 | local_inv=    0
+Flow  369510220: packets=  21 | global_inv=    0 | local_inv=    0
+Flow  187268030: packets=  19 | global_inv=    0 | local_inv=    0
+Flow 3967429144: packets=  24 | global_inv=    0 | local_inv=    0
+Flow 2758117689: packets=   5 | global_inv=    0 | local_inv=    0
+Flow  884770709: packets=  21 | global_inv=    0 | local_inv=    0
+Flow 3051174246: packets=  20 | global_inv=    0 | local_inv=    0
+Flow  303738715: packets=  25 | global_inv=    0 | local_inv=    0
+Flow 1383420815: packets=  19 | global_inv=    0 | local_inv=    0
+Flow  246422443: packets=  28 | global_inv=    0 | local_inv=    0
+Flow  329626491: packets=  24 | global_inv=    0 | local_inv=    0
+Flow 2766184023: packets=  27 | global_inv=    0 | local_inv=    0
+Flow 2953063524: packets=  11 | global_inv=    0 | local_inv=    0
+Flow 2139640512: packets=  18 | global_inv=    0 | local_inv=    0
+Flow 2700369593: packets=  30 | global_inv=    0 | local_inv=    0
+Flow  334665202: packets=  14 | global_inv=    0 | local_inv=    0
+Flow  869605761: packets=  16 | global_inv=    0 | local_inv=    0
+Flow 2453803423: packets=  26 | global_inv=    0 | local_inv=    0
+Flow 3092712593: packets=  12 | global_inv=    0 | local_inv=    0
+Flow 3871046510: packets=   6 | global_inv=    0 | local_inv=    0
+Flow 1164548020: packets=  27 | global_inv=    0 | local_inv=    0
+Flow 1249676908: packets=  25 | global_inv=    0 | local_inv=    0
+Flow  466718684: packets=  19 | global_inv=    0 | local_inv=    0
+Flow 2770711549: packets=  16 | global_inv=    0 | local_inv=    0
+Flow  186322766: packets=  12 | global_inv=    0 | local_inv=    0
+Flow 3764679954: packets=  19 | global_inv=    0 | local_inv=    0
+Flow   78112331: packets=  24 | global_inv=    0 | local_inv=    0
+----------------------------------------
+TOTAL: packets=938 | global_inv=0 | local_inv=0
+========================================
+====== Per-Flow Reordering Report ======
+Captured packets: 829, flows observed: 50
+
+--- Raw packet sequences captured ---
+Flow 660989087: 22 packets
+  Seqs: 0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21
+Flow 3057955234: 14 packets
+  Seqs: 0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13
+Flow 3544721275: 6 packets
+  Seqs: 0, 1, 2, 3, 4, 5
+Flow 146151124: 10 packets
+  Seqs: 0, 1, 2, 3, 4, 5, 6, 7, 8, 9
+Flow 3751351840: 13 packets
+  Seqs: 0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12
+Flow 2642257204: 5 packets
+  Seqs: 0, 1, 2, 3, 4
+Flow 304816551: 5 packets
+  Seqs: 0, 1, 2, 3, 4
+Flow 1238832861: 12 packets
+  Seqs: 0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11
+Flow 995323524: 28 packets
+  Seqs: 0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 25, 26, 27
+Flow 1868831792: 19 packets
+  Seqs: 0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18
+Flow 734674876: 8 packets
+  Seqs: 0, 1, 2, 3, 4, 5, 6, 7
+Flow 2905344977: 26 packets
+  Seqs: 0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 25
+Flow 3774202953: 23 packets
+  Seqs: 0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22
+Flow 2967989323: 18 packets
+  Seqs: 0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17
+Flow 1863640274: 30 packets
+  Seqs: 0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 25, 26, 27, 28, 29
+Flow 167755586: 10 packets
+  Seqs: 0, 1, 2, 3, 4, 5, 6, 7, 8, 9
+Flow 971977259: 10 packets
+  Seqs: 0, 1, 2, 3, 4, 5, 6, 7, 8, 9
+Flow 4146700929: 20 packets
+  Seqs: 0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19
+Flow 909627410: 8 packets
+  Seqs: 0, 1, 2, 3, 4, 5, 6, 7
+Flow 1130436848: 16 packets
+  Seqs: 0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15
+Flow 3604766092: 27 packets
+  Seqs: 0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 25, 26
+Flow 575983781: 30 packets
+  Seqs: 0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 25, 26, 27, 28, 29
+Flow 3841263935: 8 packets
+  Seqs: 0, 1, 2, 3, 4, 5, 6, 7
+Flow 435224124: 23 packets
+  Seqs: 0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22
+Flow 3964288087: 23 packets
+  Seqs: 0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22
+Flow 3712756046: 7 packets
+  Seqs: 0, 1, 2, 3, 4, 5, 6
+Flow 4101930402: 27 packets
+  Seqs: 0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 25, 26
+Flow 1459547741: 17 packets
+  Seqs: 0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16
+Flow 744370579: 14 packets
+  Seqs: 0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13
+Flow 2233898259: 11 packets
+  Seqs: 0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10
+Flow 4046662607: 28 packets
+  Seqs: 0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 25, 26, 27
+Flow 1593028768: 19 packets
+  Seqs: 0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18
+Flow 1941963896: 12 packets
+  Seqs: 0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11
+Flow 2916189302: 18 packets
+  Seqs: 0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17
+Flow 962284224: 24 packets
+  Seqs: 0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23
+Flow 2137210754: 10 packets
+  Seqs: 0, 1, 2, 3, 4, 5, 6, 7, 8, 9
+Flow 2796010043: 10 packets
+  Seqs: 0, 1, 2, 3, 4, 5, 6, 7, 8, 9
+Flow 3687933429: 12 packets
+  Seqs: 0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11
+Flow 1123689220: 10 packets
+  Seqs: 0, 1, 2, 3, 4, 5, 6, 7, 8, 9
+Flow 1266325499: 19 packets
+  Seqs: 0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18
+Flow 2204974161: 8 packets
+  Seqs: 0, 1, 2, 3, 4, 5, 6, 7
+Flow 2585673873: 25 packets
+  Seqs: 0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24
+Flow 4157607224: 7 packets
+  Seqs: 0, 1, 2, 3, 4, 5, 6
+Flow 2741829512: 18 packets
+  Seqs: 0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17
+Flow 1126257968: 10 packets
+  Seqs: 0, 1, 2, 3, 4, 5, 6, 7, 8, 9
+Flow 309063659: 23 packets
+  Seqs: 0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22
+Flow 42693707: 26 packets
+  Seqs: 0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 25
+Flow 2803511393: 30 packets
+  Seqs: 0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 25, 26, 27, 28, 29
+Flow 105334139: 16 packets
+  Seqs: 0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15
+Flow 325362597: 14 packets
+  Seqs: 0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13
+----------------------------------------
+Flow  660989087: packets=  22 | global_inv=    0 | local_inv=    0
+Flow 3057955234: packets=  14 | global_inv=    0 | local_inv=    0
+Flow 3544721275: packets=   6 | global_inv=    0 | local_inv=    0
+Flow  146151124: packets=  10 | global_inv=    0 | local_inv=    0
+Flow 3751351840: packets=  13 | global_inv=    0 | local_inv=    0
+Flow 2642257204: packets=   5 | global_inv=    0 | local_inv=    0
+Flow  304816551: packets=   5 | global_inv=    0 | local_inv=    0
+Flow 1238832861: packets=  12 | global_inv=    0 | local_inv=    0
+Flow  995323524: packets=  28 | global_inv=    0 | local_inv=    0
+Flow 1868831792: packets=  19 | global_inv=    0 | local_inv=    0
+Flow  734674876: packets=   8 | global_inv=    0 | local_inv=    0
+Flow 2905344977: packets=  26 | global_inv=    0 | local_inv=    0
+Flow 3774202953: packets=  23 | global_inv=    0 | local_inv=    0
+Flow 2967989323: packets=  18 | global_inv=    0 | local_inv=    0
+Flow 1863640274: packets=  30 | global_inv=    0 | local_inv=    0
+Flow  167755586: packets=  10 | global_inv=    0 | local_inv=    0
+Flow  971977259: packets=  10 | global_inv=    0 | local_inv=    0
+Flow 4146700929: packets=  20 | global_inv=    0 | local_inv=    0
+Flow  909627410: packets=   8 | global_inv=    0 | local_inv=    0
+Flow 1130436848: packets=  16 | global_inv=    0 | local_inv=    0
+Flow 3604766092: packets=  27 | global_inv=    0 | local_inv=    0
+Flow  575983781: packets=  30 | global_inv=    0 | local_inv=    0
+Flow 3841263935: packets=   8 | global_inv=    0 | local_inv=    0
+Flow  435224124: packets=  23 | global_inv=    0 | local_inv=    0
+Flow 3964288087: packets=  23 | global_inv=    0 | local_inv=    0
+Flow 3712756046: packets=   7 | global_inv=    0 | local_inv=    0
+Flow 4101930402: packets=  27 | global_inv=    0 | local_inv=    0
+Flow 1459547741: packets=  17 | global_inv=    0 | local_inv=    0
+Flow  744370579: packets=  14 | global_inv=    0 | local_inv=    0
+Flow 2233898259: packets=  11 | global_inv=    0 | local_inv=    0
+Flow 4046662607: packets=  28 | global_inv=    0 | local_inv=    0
+Flow 1593028768: packets=  19 | global_inv=    0 | local_inv=    0
+Flow 1941963896: packets=  12 | global_inv=    0 | local_inv=    0
+Flow 2916189302: packets=  18 | global_inv=    0 | local_inv=    0
+Flow  962284224: packets=  24 | global_inv=    0 | local_inv=    0
+Flow 2137210754: packets=  10 | global_inv=    0 | local_inv=    0
+Flow 2796010043: packets=  10 | global_inv=    0 | local_inv=    0
+Flow 3687933429: packets=  12 | global_inv=    0 | local_inv=    0
+Flow 1123689220: packets=  10 | global_inv=    0 | local_inv=    0
+Flow 1266325499: packets=  19 | global_inv=    0 | local_inv=    0
+Flow 2204974161: packets=   8 | global_inv=    0 | local_inv=    0
+Flow 2585673873: packets=  25 | global_inv=    0 | local_inv=    0
+Flow 4157607224: packets=   7 | global_inv=    0 | local_inv=    0
+Flow 2741829512: packets=  18 | global_inv=    0 | local_inv=    0
+Flow 1126257968: packets=  10 | global_inv=    0 | local_inv=    0
+Flow  309063659: packets=  23 | global_inv=    0 | local_inv=    0
+Flow   42693707: packets=  26 | global_inv=    0 | local_inv=    0
+Flow 2803511393: packets=  30 | global_inv=    0 | local_inv=    0
+Flow  105334139: packets=  16 | global_inv=    0 | local_inv=    0
+Flow  325362597: packets=  14 | global_inv=    0 | local_inv=    0
+----------------------------------------
+TOTAL: packets=829 | global_inv=0 | local_inv=0
+========================================
+====== Per-Flow Reordering Report ======
+Captured packets: 903, flows observed: 50
+
+--- Raw packet sequences captured ---
+Flow 2581016513: 16 packets
+  Seqs: 0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15
+Flow 4240648335: 16 packets
+  Seqs: 0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15
+Flow 3326284125: 20 packets
+  Seqs: 0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19
+Flow 4028702927: 20 packets
+  Seqs: 0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19
+Flow 1100951741: 10 packets
+  Seqs: 0, 1, 2, 3, 4, 5, 6, 7, 8, 9
+Flow 499330246: 12 packets
+  Seqs: 0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11
+Flow 2188569176: 21 packets
+  Seqs: 0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20
+Flow 2606934135: 10 packets
+  Seqs: 0, 1, 2, 3, 4, 5, 6, 7, 8, 9
+Flow 3579643299: 20 packets
+  Seqs: 0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19
+Flow 2564844671: 29 packets
+  Seqs: 0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 25, 26, 27, 28
+Flow 1255069635: 16 packets
+  Seqs: 0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15
+Flow 1247184600: 12 packets
+  Seqs: 0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11
+Flow 2969217972: 13 packets
+  Seqs: 0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12
+Flow 3505716302: 24 packets
+  Seqs: 0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23
+Flow 4017138488: 6 packets
+  Seqs: 0, 1, 2, 3, 4, 5
+Flow 1719791824: 29 packets
+  Seqs: 0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 25, 26, 27, 28
+Flow 1114238973: 25 packets
+  Seqs: 0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24
+Flow 1888435500: 21 packets
+  Seqs: 0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20
+Flow 1848846685: 17 packets
+  Seqs: 0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16
+Flow 60633476: 28 packets
+  Seqs: 0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 25, 26, 27
+Flow 2445045421: 26 packets
+  Seqs: 0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 25
+Flow 1072841486: 14 packets
+  Seqs: 0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13
+Flow 1991983704: 30 packets
+  Seqs: 0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 25, 26, 27, 28, 29
+Flow 2217811370: 22 packets
+  Seqs: 0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21
+Flow 2003870733: 28 packets
+  Seqs: 0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 25, 26, 27
+Flow 2489870614: 28 packets
+  Seqs: 0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 25, 26, 27
+Flow 712579290: 22 packets
+  Seqs: 0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21
+Flow 3565067212: 22 packets
+  Seqs: 0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21
+Flow 780665783: 5 packets
+  Seqs: 0, 1, 2, 3, 4
+Flow 1206367862: 21 packets
+  Seqs: 0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20
+Flow 843874082: 14 packets
+  Seqs: 0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13
+Flow 1050422130: 15 packets
+  Seqs: 0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14
+Flow 2547922827: 12 packets
+  Seqs: 0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11
+Flow 2715029392: 18 packets
+  Seqs: 0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17
+Flow 2163424159: 26 packets
+  Seqs: 0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 25
+Flow 1729116302: 5 packets
+  Seqs: 0, 1, 2, 3, 4
+Flow 3996621695: 12 packets
+  Seqs: 0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11
+Flow 107699155: 13 packets
+  Seqs: 0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12
+Flow 2468892512: 11 packets
+  Seqs: 0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10
+Flow 901996506: 16 packets
+  Seqs: 0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15
+Flow 2844951394: 24 packets
+  Seqs: 0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23
+Flow 408816817: 18 packets
+  Seqs: 0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17
+Flow 1152855216: 27 packets
+  Seqs: 0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 25, 26
+Flow 170823873: 9 packets
+  Seqs: 0, 1, 2, 3, 4, 5, 6, 7, 8
+Flow 4169995229: 11 packets
+  Seqs: 0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10
+Flow 2430444482: 19 packets
+  Seqs: 0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18
+Flow 739125471: 13 packets
+  Seqs: 0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12
+Flow 3288313707: 30 packets
+  Seqs: 0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 25, 26, 27, 28, 29
+Flow 1435755499: 19 packets
+  Seqs: 0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18
+Flow 3235393286: 8 packets
+  Seqs: 0, 1, 2, 3, 4, 5, 6, 7
+----------------------------------------
+Flow 2581016513: packets=  16 | global_inv=    0 | local_inv=    0
+Flow 4240648335: packets=  16 | global_inv=    0 | local_inv=    0
+Flow 3326284125: packets=  20 | global_inv=    0 | local_inv=    0
+Flow 4028702927: packets=  20 | global_inv=    0 | local_inv=    0
+Flow 1100951741: packets=  10 | global_inv=    0 | local_inv=    0
+Flow  499330246: packets=  12 | global_inv=    0 | local_inv=    0
+Flow 2188569176: packets=  21 | global_inv=    0 | local_inv=    0
+Flow 2606934135: packets=  10 | global_inv=    0 | local_inv=    0
+Flow 3579643299: packets=  20 | global_inv=    0 | local_inv=    0
+Flow 2564844671: packets=  29 | global_inv=    0 | local_inv=    0
+Flow 1255069635: packets=  16 | global_inv=    0 | local_inv=    0
+Flow 1247184600: packets=  12 | global_inv=    0 | local_inv=    0
+Flow 2969217972: packets=  13 | global_inv=    0 | local_inv=    0
+Flow 3505716302: packets=  24 | global_inv=    0 | local_inv=    0
+Flow 4017138488: packets=   6 | global_inv=    0 | local_inv=    0
+Flow 1719791824: packets=  29 | global_inv=    0 | local_inv=    0
+Flow 1114238973: packets=  25 | global_inv=    0 | local_inv=    0
+Flow 1888435500: packets=  21 | global_inv=    0 | local_inv=    0
+Flow 1848846685: packets=  17 | global_inv=    0 | local_inv=    0
+Flow   60633476: packets=  28 | global_inv=    0 | local_inv=    0
+Flow 2445045421: packets=  26 | global_inv=    0 | local_inv=    0
+Flow 1072841486: packets=  14 | global_inv=    0 | local_inv=    0
+Flow 1991983704: packets=  30 | global_inv=    0 | local_inv=    0
+Flow 2217811370: packets=  22 | global_inv=    0 | local_inv=    0
+Flow 2003870733: packets=  28 | global_inv=    0 | local_inv=    0
+Flow 2489870614: packets=  28 | global_inv=    0 | local_inv=    0
+Flow  712579290: packets=  22 | global_inv=    0 | local_inv=    0
+Flow 3565067212: packets=  22 | global_inv=    0 | local_inv=    0
+Flow  780665783: packets=   5 | global_inv=    0 | local_inv=    0
+Flow 1206367862: packets=  21 | global_inv=    0 | local_inv=    0
+Flow  843874082: packets=  14 | global_inv=    0 | local_inv=    0
+Flow 1050422130: packets=  15 | global_inv=    0 | local_inv=    0
+Flow 2547922827: packets=  12 | global_inv=    0 | local_inv=    0
+Flow 2715029392: packets=  18 | global_inv=    0 | local_inv=    0
+Flow 2163424159: packets=  26 | global_inv=    0 | local_inv=    0
+Flow 1729116302: packets=   5 | global_inv=    0 | local_inv=    0
+Flow 3996621695: packets=  12 | global_inv=    0 | local_inv=    0
+Flow  107699155: packets=  13 | global_inv=    0 | local_inv=    0
+Flow 2468892512: packets=  11 | global_inv=    0 | local_inv=    0
+Flow  901996506: packets=  16 | global_inv=    0 | local_inv=    0
+Flow 2844951394: packets=  24 | global_inv=    0 | local_inv=    0
+Flow  408816817: packets=  18 | global_inv=    0 | local_inv=    0
+Flow 1152855216: packets=  27 | global_inv=    0 | local_inv=    0
+Flow  170823873: packets=   9 | global_inv=    0 | local_inv=    0
+Flow 4169995229: packets=  11 | global_inv=    0 | local_inv=    0
+Flow 2430444482: packets=  19 | global_inv=    0 | local_inv=    0
+Flow  739125471: packets=  13 | global_inv=    0 | local_inv=    0
+Flow 3288313707: packets=  30 | global_inv=    0 | local_inv=    0
+Flow 1435755499: packets=  19 | global_inv=    0 | local_inv=    0
+Flow 3235393286: packets=   8 | global_inv=    0 | local_inv=    0
+----------------------------------------
+TOTAL: packets=903 | global_inv=0 | local_inv=0
+========================================
+====== Per-Flow Reordering Report ======
+Captured packets: 906, flows observed: 50
+
+--- Raw packet sequences captured ---
+Flow 902485401: 13 packets
+  Seqs: 0, 1, 2, 4, 5, 3, 6, 7, 8, 9, 10, 12, 11
+Flow 1475517791: 29 packets
+  Seqs: 0, 1, 2, 3, 4, 5, 6, 8, 7, 9, 10, 11, 12, 13, 14, 16, 15, 17, 18, 19, 20, 21, 22, 24, 23, 25, 26, 27, 28
+Flow 1480019509: 6 packets
+  Seqs: 0, 1, 2, 4, 3, 5
+Flow 2267011659: 16 packets
+  Seqs: 0, 1, 2, 3, 4, 5, 6, 8, 7, 9, 10, 11, 12, 13, 14, 15
+Flow 2272590290: 9 packets
+  Seqs: 0, 1, 2, 3, 4, 5, 6, 8, 7
+Flow 2768704121: 7 packets
+  Seqs: 0, 1, 4, 2, 3, 5, 6
+Flow 564338804: 9 packets
+  Seqs: 0, 1, 2, 3, 4, 5, 6, 8, 7
+Flow 3684571214: 13 packets
+  Seqs: 0, 1, 2, 4, 3, 5, 6, 7, 8, 9, 10, 12, 11
+Flow 3352342145: 17 packets
+  Seqs: 0, 1, 2, 4, 3, 5, 6, 7, 8, 9, 10, 12, 13, 11, 14, 15, 16
+Flow 2985379271: 27 packets
+  Seqs: 0, 1, 2, 3, 4, 5, 6, 8, 7, 9, 10, 11, 12, 13, 14, 16, 15, 17, 18, 19, 20, 21, 22, 24, 23, 25, 26
+Flow 1430119945: 16 packets
+  Seqs: 0, 1, 2, 4, 3, 5, 6, 7, 8, 9, 10, 12, 11, 13, 14, 15
+Flow 1401290686: 25 packets
+  Seqs: 0, 1, 2, 3, 4, 5, 6, 8, 7, 9, 10, 11, 12, 13, 14, 16, 15, 17, 18, 19, 20, 21, 22, 24, 23
+Flow 3807807956: 16 packets
+  Seqs: 0, 1, 2, 3, 4, 5, 6, 8, 7, 9, 10, 11, 12, 13, 14, 15
+Flow 1741218183: 11 packets
+  Seqs: 0, 1, 2, 4, 3, 5, 6, 7, 8, 9, 10
+Flow 3033631986: 26 packets
+  Seqs: 0, 1, 2, 3, 4, 5, 6, 8, 7, 9, 10, 11, 12, 13, 14, 16, 15, 17, 18, 19, 20, 21, 22, 24, 23, 25
+Flow 1621735562: 16 packets
+  Seqs: 0, 1, 2, 4, 3, 5, 6, 7, 8, 9, 10, 12, 11, 13, 14, 15
+Flow 1040771228: 11 packets
+  Seqs: 0, 1, 2, 3, 4, 5, 6, 8, 7, 9, 10
+Flow 1369843696: 5 packets
+  Seqs: 0, 1, 2, 4, 3
+Flow 4183944998: 25 packets
+  Seqs: 0, 1, 2, 4, 3, 5, 6, 7, 8, 9, 10, 12, 11, 13, 14, 15, 16, 17, 18, 20, 19, 21, 22, 23, 24
+Flow 445753780: 5 packets
+  Seqs: 0, 1, 2, 3, 4
+Flow 657803351: 12 packets
+  Seqs: 0, 1, 2, 3, 4, 5, 6, 8, 7, 9, 10, 11
+Flow 4219804002: 23 packets
+  Seqs: 0, 1, 2, 3, 4, 5, 6, 8, 7, 9, 10, 11, 12, 13, 14, 16, 15, 17, 18, 19, 20, 21, 22
+Flow 2985899347: 29 packets
+  Seqs: 0, 1, 2, 3, 4, 5, 6, 8, 7, 9, 10, 11, 12, 13, 14, 16, 15, 17, 18, 19, 20, 21, 22, 24, 23, 25, 26, 27, 28
+Flow 2456079269: 8 packets
+  Seqs: 0, 1, 2, 3, 4, 5, 6, 7
+Flow 1182701908: 29 packets
+  Seqs: 0, 1, 2, 4, 3, 5, 6, 7, 8, 9, 10, 12, 11, 13, 14, 15, 16, 17, 18, 20, 19, 21, 22, 23, 24, 25, 26, 28, 27
+Flow 3138554902: 15 packets
+  Seqs: 0, 1, 2, 3, 4, 5, 6, 8, 7, 9, 10, 11, 12, 13, 14
+Flow 1319094815: 29 packets
+  Seqs: 0, 1, 2, 3, 4, 5, 6, 8, 7, 9, 10, 11, 12, 13, 14, 16, 15, 17, 18, 19, 20, 21, 22, 24, 23, 25, 26, 27, 28
+Flow 2956404920: 28 packets
+  Seqs: 0, 1, 2, 4, 3, 5, 6, 7, 8, 9, 10, 12, 11, 13, 14, 15, 16, 17, 18, 20, 19, 21, 22, 23, 24, 25, 26, 27
+Flow 1339215972: 30 packets
+  Seqs: 0, 1, 2, 4, 3, 5, 6, 7, 8, 9, 10, 12, 11, 13, 14, 15, 16, 17, 18, 20, 19, 21, 22, 23, 24, 25, 26, 28, 27, 29
+Flow 4094124466: 22 packets
+  Seqs: 0, 1, 2, 4, 3, 5, 6, 7, 8, 9, 10, 12, 11, 13, 14, 15, 16, 17, 18, 20, 19, 21
+Flow 3944201530: 15 packets
+  Seqs: 0, 1, 2, 4, 3, 5, 6, 7, 8, 9, 10, 12, 11, 13, 14
+Flow 306986167: 18 packets
+  Seqs: 0, 1, 2, 4, 3, 5, 6, 7, 8, 9, 10, 12, 11, 13, 14, 15, 16, 17
+Flow 2073835717: 26 packets
+  Seqs: 0, 1, 2, 4, 5, 3, 6, 7, 8, 9, 10, 12, 11, 13, 14, 15, 16, 17, 18, 20, 19, 21, 22, 23, 24, 25
+Flow 2603431585: 22 packets
+  Seqs: 0, 1, 2, 3, 4, 5, 6, 8, 7, 9, 10, 11, 12, 13, 14, 16, 15, 17, 18, 19, 20, 21
+Flow 289407840: 21 packets
+  Seqs: 0, 1, 2, 3, 4, 5, 6, 8, 7, 9, 10, 11, 12, 13, 14, 16, 15, 17, 18, 19, 20
+Flow 4189743655: 15 packets
+  Seqs: 0, 1, 2, 3, 4, 5, 6, 8, 7, 9, 10, 11, 12, 13, 14
+Flow 3868123296: 14 packets
+  Seqs: 0, 1, 2, 3, 4, 5, 6, 8, 7, 9, 10, 11, 12, 13
+Flow 3785216990: 29 packets
+  Seqs: 0, 1, 2, 4, 3, 5, 6, 7, 8, 9, 10, 12, 11, 13, 14, 15, 16, 17, 18, 20, 19, 21, 22, 23, 24, 25, 26, 28, 27
+Flow 2952404776: 27 packets
+  Seqs: 0, 1, 2, 3, 4, 5, 6, 8, 7, 9, 10, 11, 12, 13, 14, 16, 15, 17, 18, 19, 20, 21, 22, 24, 23, 25, 26
+Flow 4089612630: 26 packets
+  Seqs: 0, 1, 2, 3, 4, 5, 6, 8, 7, 9, 10, 11, 12, 13, 14, 16, 15, 17, 18, 19, 20, 21, 22, 24, 23, 25
+Flow 2390103921: 24 packets
+  Seqs: 0, 1, 2, 3, 4, 5, 6, 8, 7, 9, 10, 11, 12, 13, 14, 16, 15, 17, 18, 19, 20, 21, 22, 23
+Flow 1734442577: 21 packets
+  Seqs: 0, 1, 2, 4, 3, 5, 6, 7, 8, 9, 10, 12, 11, 13, 14, 15, 16, 17, 18, 20, 19
+Flow 2631526284: 20 packets
+  Seqs: 0, 1, 2, 3, 4, 5, 6, 8, 7, 9, 10, 11, 12, 13, 14, 16, 15, 17, 18, 19
+Flow 907393942: 7 packets
+  Seqs: 0, 1, 2, 4, 3, 5, 6
+Flow 3430471082: 9 packets
+  Seqs: 0, 1, 2, 4, 3, 5, 6, 7, 8
+Flow 19603832: 22 packets
+  Seqs: 0, 1, 2, 4, 3, 5, 6, 7, 8, 9, 10, 12, 11, 13, 14, 15, 16, 17, 18, 20, 19, 21
+Flow 1637689717: 10 packets
+  Seqs: 0, 1, 2, 3, 4, 5, 6, 8, 7, 9
+Flow 3338186018: 24 packets
+  Seqs: 0, 1, 2, 4, 3, 5, 6, 7, 8, 9, 10, 12, 11, 13, 14, 15, 16, 17, 18, 20, 19, 21, 22, 23
+Flow 4260995169: 17 packets
+  Seqs: 0, 1, 2, 3, 4, 5, 6, 8, 7, 9, 10, 11, 12, 13, 14, 16, 15
+Flow 170896174: 12 packets
+  Seqs: 0, 1, 2, 4, 3, 5, 6, 7, 8, 9, 10, 11
+----------------------------------------
+Flow  902485401: packets=  13 | global_inv=    3 | local_inv=    2
+Flow 1475517791: packets=  29 | global_inv=    3 | local_inv=    3
+Flow 1480019509: packets=   6 | global_inv=    1 | local_inv=    1
+Flow 2267011659: packets=  16 | global_inv=    1 | local_inv=    1
+Flow 2272590290: packets=   9 | global_inv=    1 | local_inv=    1
+Flow 2768704121: packets=   7 | global_inv=    2 | local_inv=    1
+Flow  564338804: packets=   9 | global_inv=    1 | local_inv=    1
+Flow 3684571214: packets=  13 | global_inv=    2 | local_inv=    2
+Flow 3352342145: packets=  17 | global_inv=    3 | local_inv=    2
+Flow 2985379271: packets=  27 | global_inv=    3 | local_inv=    3
+Flow 1430119945: packets=  16 | global_inv=    2 | local_inv=    2
+Flow 1401290686: packets=  25 | global_inv=    3 | local_inv=    3
+Flow 3807807956: packets=  16 | global_inv=    1 | local_inv=    1
+Flow 1741218183: packets=  11 | global_inv=    1 | local_inv=    1
+Flow 3033631986: packets=  26 | global_inv=    3 | local_inv=    3
+Flow 1621735562: packets=  16 | global_inv=    2 | local_inv=    2
+Flow 1040771228: packets=  11 | global_inv=    1 | local_inv=    1
+Flow 1369843696: packets=   5 | global_inv=    1 | local_inv=    1
+Flow 4183944998: packets=  25 | global_inv=    3 | local_inv=    3
+Flow  445753780: packets=   5 | global_inv=    0 | local_inv=    0
+Flow  657803351: packets=  12 | global_inv=    1 | local_inv=    1
+Flow 4219804002: packets=  23 | global_inv=    2 | local_inv=    2
+Flow 2985899347: packets=  29 | global_inv=    3 | local_inv=    3
+Flow 2456079269: packets=   8 | global_inv=    0 | local_inv=    0
+Flow 1182701908: packets=  29 | global_inv=    4 | local_inv=    4
+Flow 3138554902: packets=  15 | global_inv=    1 | local_inv=    1
+Flow 1319094815: packets=  29 | global_inv=    3 | local_inv=    3
+Flow 2956404920: packets=  28 | global_inv=    3 | local_inv=    3
+Flow 1339215972: packets=  30 | global_inv=    4 | local_inv=    4
+Flow 4094124466: packets=  22 | global_inv=    3 | local_inv=    3
+Flow 3944201530: packets=  15 | global_inv=    2 | local_inv=    2
+Flow  306986167: packets=  18 | global_inv=    2 | local_inv=    2
+Flow 2073835717: packets=  26 | global_inv=    4 | local_inv=    3
+Flow 2603431585: packets=  22 | global_inv=    2 | local_inv=    2
+Flow  289407840: packets=  21 | global_inv=    2 | local_inv=    2
+Flow 4189743655: packets=  15 | global_inv=    1 | local_inv=    1
+Flow 3868123296: packets=  14 | global_inv=    1 | local_inv=    1
+Flow 3785216990: packets=  29 | global_inv=    4 | local_inv=    4
+Flow 2952404776: packets=  27 | global_inv=    3 | local_inv=    3
+Flow 4089612630: packets=  26 | global_inv=    3 | local_inv=    3
+Flow 2390103921: packets=  24 | global_inv=    2 | local_inv=    2
+Flow 1734442577: packets=  21 | global_inv=    3 | local_inv=    3
+Flow 2631526284: packets=  20 | global_inv=    2 | local_inv=    2
+Flow  907393942: packets=   7 | global_inv=    1 | local_inv=    1
+Flow 3430471082: packets=   9 | global_inv=    1 | local_inv=    1
+Flow   19603832: packets=  22 | global_inv=    3 | local_inv=    3
+Flow 1637689717: packets=  10 | global_inv=    1 | local_inv=    1
+Flow 3338186018: packets=  24 | global_inv=    3 | local_inv=    3
+Flow 4260995169: packets=  17 | global_inv=    2 | local_inv=    2
+Flow  170896174: packets=  12 | global_inv=    1 | local_inv=    1
+----------------------------------------
+TOTAL: packets=906 | global_inv=104 | local_inv=100
+========================================
+====== Per-Packet Reordering Report ======
+Captured packets: 903, flows observed: 50
+
+--- Raw packet sequences captured ---
+Flow 3947099046: 15 packets
+  Seqs: 0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14
+Flow 29776216: 11 packets
+  Seqs: 0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10
+Flow 4290264688: 14 packets
+  Seqs: 0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13
+Flow 4215420745: 5 packets
+  Seqs: 0, 1, 2, 3, 4
+Flow 962219104: 29 packets
+  Seqs: 0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 25, 26, 27, 28
+Flow 130914514: 23 packets
+  Seqs: 0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22
+Flow 1160740669: 13 packets
+  Seqs: 0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12
+Flow 3457736488: 16 packets
+  Seqs: 0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15
+Flow 1345751371: 16 packets
+  Seqs: 0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15
+Flow 3920961174: 15 packets
+  Seqs: 0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14
+Flow 2929231144: 24 packets
+  Seqs: 0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23
+Flow 3753918177: 19 packets
+  Seqs: 0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18
+Flow 155151651: 28 packets
+  Seqs: 0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 25, 26, 27
+Flow 1799223000: 19 packets
+  Seqs: 0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18
+Flow 1494800966: 13 packets
+  Seqs: 0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12
+Flow 2958383322: 21 packets
+  Seqs: 0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20
+Flow 422685446: 16 packets
+  Seqs: 0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15
+Flow 1458789255: 8 packets
+  Seqs: 0, 1, 2, 3, 4, 5, 6, 7
+Flow 1731833863: 17 packets
+  Seqs: 0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16
+Flow 3337487403: 13 packets
+  Seqs: 0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12
+Flow 3249388226: 7 packets
+  Seqs: 0, 1, 2, 3, 4, 5, 6
+Flow 3647143156: 30 packets
+  Seqs: 0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 25, 26, 27, 28, 29
+Flow 1708149468: 6 packets
+  Seqs: 0, 1, 2, 3, 4, 5
+Flow 358387890: 18 packets
+  Seqs: 0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17
+Flow 3490303961: 26 packets
+  Seqs: 0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 25
+Flow 3381365415: 19 packets
+  Seqs: 0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18
+Flow 2075465002: 11 packets
+  Seqs: 0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10
+Flow 3035515073: 15 packets
+  Seqs: 0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14
+Flow 1974576314: 14 packets
+  Seqs: 0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13
+Flow 1249097662: 21 packets
+  Seqs: 0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20
+Flow 346541124: 29 packets
+  Seqs: 0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 25, 26, 27, 28
+Flow 3438459374: 7 packets
+  Seqs: 0, 1, 2, 3, 4, 5, 6
+Flow 350088494: 22 packets
+  Seqs: 0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21
+Flow 4071944809: 26 packets
+  Seqs: 0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 25
+Flow 653268608: 7 packets
+  Seqs: 0, 1, 2, 3, 4, 5, 6
+Flow 1764308879: 20 packets
+  Seqs: 0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19
+Flow 965506810: 17 packets
+  Seqs: 0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16
+Flow 4038141309: 12 packets
+  Seqs: 0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11
+Flow 2986839609: 15 packets
+  Seqs: 0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14
+Flow 1950096920: 9 packets
+  Seqs: 0, 1, 2, 3, 4, 5, 6, 7, 8
+Flow 1913501993: 30 packets
+  Seqs: 0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 25, 26, 27, 28, 29
+Flow 3236651404: 11 packets
+  Seqs: 0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10
+Flow 3046922112: 26 packets
+  Seqs: 0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 25
+Flow 1843973738: 27 packets
+  Seqs: 0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 25, 26
+Flow 1779524346: 28 packets
+  Seqs: 0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 25, 26, 27
+Flow 1300486384: 30 packets
+  Seqs: 0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 25, 26, 27, 28, 29
+Flow 1018761836: 24 packets
+  Seqs: 0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23
+Flow 4199361463: 17 packets
+  Seqs: 0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16
+Flow 3861217480: 17 packets
+  Seqs: 0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16
+Flow 313557670: 27 packets
+  Seqs: 0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 25, 26
+----------------------------------------
+Flow 3947099046: packets=  15 | global_inv=    0 | local_inv=    0
+Flow   29776216: packets=  11 | global_inv=    0 | local_inv=    0
+Flow 4290264688: packets=  14 | global_inv=    0 | local_inv=    0
+Flow 4215420745: packets=   5 | global_inv=    0 | local_inv=    0
+Flow  962219104: packets=  29 | global_inv=    0 | local_inv=    0
+Flow  130914514: packets=  23 | global_inv=    0 | local_inv=    0
+Flow 1160740669: packets=  13 | global_inv=    0 | local_inv=    0
+Flow 3457736488: packets=  16 | global_inv=    0 | local_inv=    0
+Flow 1345751371: packets=  16 | global_inv=    0 | local_inv=    0
+Flow 3920961174: packets=  15 | global_inv=    0 | local_inv=    0
+Flow 2929231144: packets=  24 | global_inv=    0 | local_inv=    0
+Flow 3753918177: packets=  19 | global_inv=    0 | local_inv=    0
+Flow  155151651: packets=  28 | global_inv=    0 | local_inv=    0
+Flow 1799223000: packets=  19 | global_inv=    0 | local_inv=    0
+Flow 1494800966: packets=  13 | global_inv=    0 | local_inv=    0
+Flow 2958383322: packets=  21 | global_inv=    0 | local_inv=    0
+Flow  422685446: packets=  16 | global_inv=    0 | local_inv=    0
+Flow 1458789255: packets=   8 | global_inv=    0 | local_inv=    0
+Flow 1731833863: packets=  17 | global_inv=    0 | local_inv=    0
+Flow 3337487403: packets=  13 | global_inv=    0 | local_inv=    0
+Flow 3249388226: packets=   7 | global_inv=    0 | local_inv=    0
+Flow 3647143156: packets=  30 | global_inv=    0 | local_inv=    0
+Flow 1708149468: packets=   6 | global_inv=    0 | local_inv=    0
+Flow  358387890: packets=  18 | global_inv=    0 | local_inv=    0
+Flow 3490303961: packets=  26 | global_inv=    0 | local_inv=    0
+Flow 3381365415: packets=  19 | global_inv=    0 | local_inv=    0
+Flow 2075465002: packets=  11 | global_inv=    0 | local_inv=    0
+Flow 3035515073: packets=  15 | global_inv=    0 | local_inv=    0
+Flow 1974576314: packets=  14 | global_inv=    0 | local_inv=    0
+Flow 1249097662: packets=  21 | global_inv=    0 | local_inv=    0
+Flow  346541124: packets=  29 | global_inv=    0 | local_inv=    0
+Flow 3438459374: packets=   7 | global_inv=    0 | local_inv=    0
+Flow  350088494: packets=  22 | global_inv=    0 | local_inv=    0
+Flow 4071944809: packets=  26 | global_inv=    0 | local_inv=    0
+Flow  653268608: packets=   7 | global_inv=    0 | local_inv=    0
+Flow 1764308879: packets=  20 | global_inv=    0 | local_inv=    0
+Flow  965506810: packets=  17 | global_inv=    0 | local_inv=    0
+Flow 4038141309: packets=  12 | global_inv=    0 | local_inv=    0
+Flow 2986839609: packets=  15 | global_inv=    0 | local_inv=    0
+Flow 1950096920: packets=   9 | global_inv=    0 | local_inv=    0
+Flow 1913501993: packets=  30 | global_inv=    0 | local_inv=    0
+Flow 3236651404: packets=  11 | global_inv=    0 | local_inv=    0
+Flow 3046922112: packets=  26 | global_inv=    0 | local_inv=    0
+Flow 1843973738: packets=  27 | global_inv=    0 | local_inv=    0
+Flow 1779524346: packets=  28 | global_inv=    0 | local_inv=    0
+Flow 1300486384: packets=  30 | global_inv=    0 | local_inv=    0
+Flow 1018761836: packets=  24 | global_inv=    0 | local_inv=    0
+Flow 4199361463: packets=  17 | global_inv=    0 | local_inv=    0
+Flow 3861217480: packets=  17 | global_inv=    0 | local_inv=    0
+Flow  313557670: packets=  27 | global_inv=    0 | local_inv=    0
+----------------------------------------
+TOTAL: packets=903 | global_inv=0 | local_inv=0
+========================================

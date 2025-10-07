@@ -4,8 +4,9 @@
 #include <v1model.p4>
 
 const bit<16> TYPE_IPV4 = 0x0800;
-const bit<16> TYPE_FIRST_HOP = 0x1234;
-const bit<16> TYPE_QUERY = 0x1235;
+const bit<16> TYPE_FIRST_HOP = 0x1234; // only H1→S1
+const bit<16> TYPE_LB_META   = 0x1235; // S1→(S2/S3/S4/H2): lb_meta || IPv4
+const bit<16> TYPE_QUERY = 0x1236;
 
 /*************************************************************************
 *********************** R E G I S T E R S  *******************************
@@ -67,7 +68,15 @@ header udp_t {
 // First hop header tag for ECMP
 // S1 removes this header and forwards the packet as usual
 header first_hop_t {
-    bit<8>   tag;     // Use bit<8> for alignment purposes
+    // Use bit<8> for alignment purposes
+    bit<8>   tag;     // 1: first hop (S1), 0: not first hop (S2, S3, S4)
+}
+
+// Header for load balancing metadata
+header lb_meta_t {
+    bit<8>  mode;      // 1=per-flow ECMP, 2=per-packet
+    bit<32> flow_id;   // Flow identifier (from sender)
+    bit<32> seq;       // Per-packet sequence (from sender)
 }
 
 // Query header
@@ -83,6 +92,7 @@ struct metadata {
 struct headers {
     ethernet_t   ethernet;
     first_hop_t  first_hop;
+    lb_meta_t    lb_meta;
     ipv4_t       ipv4;
     tcp_t        tcp;
     udp_t        udp;
@@ -105,21 +115,27 @@ parser MyParser(packet_in packet,
     state parse_ethernet {
         packet.extract(hdr.ethernet);
         transition select(hdr.ethernet.etherType) {
-            TYPE_FIRST_HOP: parse_first_hop;
             TYPE_QUERY: parse_query;
+            TYPE_FIRST_HOP: parse_first_hop;
+            TYPE_LB_META  : parse_lb_meta;
             TYPE_IPV4: parse_ipv4;
             default: accept;
         }
     }
 
-    state parse_first_hop {
-        packet.extract(hdr.first_hop);
-        transition parse_ipv4;
-    }
-
     state parse_query {
         packet.extract(hdr.query);
         transition accept;
+    }
+
+    state parse_first_hop {
+        packet.extract(hdr.first_hop);
+        transition parse_lb_meta;
+    }
+
+    state parse_lb_meta {
+        packet.extract(hdr.lb_meta);
+        transition parse_ipv4;
     }
 
     state parse_ipv4 {
@@ -203,18 +219,32 @@ control MyIngress(inout headers hdr,
                             : ((hdr.udp.isValid()) ? hdr.udp.dstPort : (bit<16>)0);
 
         // v1model hash extern: base=0 (no salt), data={fields}, max=0 (no max limit)
-        hash(h, HashAlgorithm.crc32, (bit<32>)0, { hdr.ipv4.srcAddr,
-                                          hdr.ipv4.dstAddr,
-                                          hdr.ipv4.protocol,
-                                          l4srcPort, l4dstPort }, NUM_PATHS);
+        hash(h, HashAlgorithm.crc32, (bit<32>)0, 
+            {hdr.ipv4.srcAddr, hdr.ipv4.dstAddr, hdr.ipv4.protocol, l4srcPort, l4dstPort}, 
+             NUM_PATHS);
 
         meta.ecmp_bucket = (bit<8>) h;
     }
 
-    // Action to strip first_hop header and restore EtherType to IPv4
+    action compute_per_packet_hash() {
+        bit<32> h;
+        // Mix the same 5-tuple with the sender-provided seq
+        bit<16> l4srcPort = (hdr.tcp.isValid()) ? hdr.tcp.srcPort
+                            : ((hdr.udp.isValid()) ? hdr.udp.srcPort : (bit<16>)0);
+        bit<16> l4dstPort = (hdr.tcp.isValid()) ? hdr.tcp.dstPort
+                            : ((hdr.udp.isValid()) ? hdr.udp.dstPort : (bit<16>)0);
+
+        hash(h, HashAlgorithm.crc32, (bit<32>)0,
+            {hdr.ipv4.srcAddr, hdr.ipv4.dstAddr, hdr.ipv4.protocol, l4srcPort, l4dstPort, hdr.lb_meta.seq},
+            NUM_PATHS);
+
+        meta.ecmp_bucket = (bit<8>) h;
+    }
+
+    // Action to strip first_hop header and restore EtherType to TYPE_LB_META
     action strip_first_hop() {
         hdr.first_hop.setInvalid();
-        hdr.ethernet.etherType = TYPE_IPV4;
+        hdr.ethernet.etherType = TYPE_LB_META;
     }
 
     table ecmp_select {
@@ -246,9 +276,10 @@ control MyIngress(inout headers hdr,
             return;               // skip L3 tables
         }
         else if (hdr.ipv4.isValid()) {
-            // At S1, use ECMP forwarding
-            if (hdr.first_hop.isValid()) {
-                compute_ecmp_hash();
+            // At S1, do load balancing
+            if (hdr.first_hop.isValid() && hdr.first_hop.tag == 1) {
+                if (hdr.lb_meta.mode == 1) { compute_ecmp_hash(); }             // Per-flow ECMP
+                else if (hdr.lb_meta.mode == 2) { compute_per_packet_hash(); }  // Per-packet
                 ecmp_select.apply();
                 strip_first_hop();
             }
@@ -328,7 +359,8 @@ control MyComputeChecksum(inout headers hdr, inout metadata meta) {
 control MyDeparser(packet_out packet, in headers hdr) {
     apply {
         packet.emit(hdr.ethernet);
-        packet.emit(hdr.first_hop);
+        packet.emit(hdr.first_hop); 
+        packet.emit(hdr.lb_meta);
         packet.emit(hdr.ipv4);
         packet.emit(hdr.tcp);
         packet.emit(hdr.udp);
