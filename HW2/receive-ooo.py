@@ -3,6 +3,8 @@
 import argparse
 from collections import defaultdict
 from scapy.all import *
+from datetime import datetime
+from zoneinfo import ZoneInfo
 
 LB_META_ETYPE = 0x1235
 
@@ -10,7 +12,7 @@ LB_META_ETYPE = 0x1235
 class LoadBalancing(Packet):
     name = "LoadBalancing"
     fields_desc = [
-        ByteField("mode", 1),   # 1 per-flow ECMP, 2 per-packet
+        ByteField("mode", 1),   # 1 per-flow ECMP, 2 per-packet, 3 flowlet switching
         IntField("flow_id", 0),
         IntField("seq", 0),
     ]
@@ -52,13 +54,12 @@ def main():
     ap = argparse.ArgumentParser(description="Measure out-of-order delivery per flow")
     ap.add_argument("--iface", default="eth0", help="H2 interface to sniff on")
     ap.add_argument("--log", default="reorder_report.log", help="Output log file")
-    ap.add_argument("--expect", type=int, default=0,
-                    help="Stop after seeing this many packets (0 = run until Ctrl-C)")
+    ap.add_argument("--verbose", default=True, help="Print raw sequence lists per flow")
+
     args = ap.parse_args()
 
     print(f"[i] Sniffing on {args.iface} ...")
-    if args.expect == 0:
-        print("[i] --expect arg not provided. Press Ctrl-C to stop and print the report.")
+    print("[i] Press Ctrl-C to stop and print the report.")
 
     # Create data structures to track flows
     # Key: flow_id, Value: list of seq numbers seen
@@ -77,24 +78,23 @@ def main():
     bpf = f"ether proto 0x{LB_META_ETYPE:04x}"
 
     try:
-        if args.expect > 0:
-            sniff(iface=args.iface, prn=handle, store=False, filter=bpf, count=args.expect)
-        else:
-            sniff(iface=args.iface, prn=handle, store=False, filter=bpf)
+        sniff(iface=args.iface, prn=handle, store=False, filter=bpf)
     except KeyboardInterrupt:
         pass
 
     # Compute metrics and generate report
     lines = []
-    lines.append("====== Per-Packet Reordering Report ======")
+    lines.append("\n====== Packet Reordering Report ======")
+    lines.append(datetime.now(ZoneInfo("America/Chicago")).strftime("%Y-%m-%d %H:%M:%S %Z"))
     lines.append(f"Captured packets: {pkts_seen}, flows observed: {len(flows)}")
 
     # Print raw sequence lists per flow
-    lines.append("\n--- Raw packet sequences captured ---")
-    for fid, seqs in flows.items():
-        lines.append(f"Flow {fid}: {len(seqs)} packets")
-        lines.append("  Seqs: " + ", ".join(map(str, seqs)))
-    lines.append("----------------------------------------")
+    if args.verbose:
+        lines.append("\n--- Raw sequence lists per flow ---")
+        for fid, seqs in flows.items():
+                lines.append(f"Flow {fid}: {len(seqs)} packets")
+                lines.append("  Seqs: " + ", ".join(map(str, seqs)))
+        lines.append("----------------------------------------")
 
     # Count global and local inversions per flow
     overall_global = 0

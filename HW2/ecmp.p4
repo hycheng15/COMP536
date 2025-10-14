@@ -3,21 +3,28 @@
 #include <core.p4>
 #include <v1model.p4>
 
-const bit<16> TYPE_IPV4 = 0x0800;
-const bit<16> TYPE_FIRST_HOP = 0x1234; // only H1→S1
-const bit<16> TYPE_LB_META   = 0x1235; // S1→(S2/S3/S4/H2): lb_meta || IPv4
-const bit<16> TYPE_QUERY = 0x1236;
-
 /*************************************************************************
-*********************** R E G I S T E R S  *******************************
+***************** R E G I S T E R S  & C O N S T A N T S *****************
 *************************************************************************/
+
+// EtherType values
+const bit<16> TYPE_IPV4 = 0x0800;
+const bit<16> TYPE_FIRST_HOP = 0x1234;  // only H1→S1
+const bit<16> TYPE_LB_META = 0x1235;    // S1→(S2/S3/S4/H2): lb_meta || IPv4
+const bit<16> TYPE_QUERY = 0x1236;
 
 // Register to store byte counters for S1 egress ports
 const bit<32> PORTS_MAX = 64;
 register<bit<64>>(PORTS_MAX) port_bytes;
 
+// Registers to store flowlet metadata
+const bit<32> FLOWLET_SLOTS = 1024;                 // Hash table size for flowlets
+const bit<32> FLOWLET_GAP_US = 30000;                  // 30 ms idle gap between flowlet packets
+register<bit<48>>(FLOWLET_SLOTS) last_timestamp;    // Last packet timestamp per flowlet
+register<bit<8>>(FLOWLET_SLOTS) last_bucket;        // Last selected ECMP bucket per flowlet
+
 /*************************************************************************
-*********************** H E A D E R S  ***********************************
+************************ H E A D E R S ***********************************
 *************************************************************************/
 
 typedef bit<9>  egressSpec_t;   // Standard BMv2 uses 9 bits for egress_spec
@@ -74,7 +81,7 @@ header first_hop_t {
 
 // Header for load balancing metadata
 header lb_meta_t {
-    bit<8>  mode;      // 1=per-flow ECMP, 2=per-packet
+    bit<8>  mode;      // 1=per-flow ECMP, 2=per-packet, 3=flowlet
     bit<32> flow_id;   // Flow identifier (from sender)
     bit<32> seq;       // Per-packet sequence (from sender)
 }
@@ -86,7 +93,8 @@ header query_t {
 }
 
 struct metadata {
-    bit<8> ecmp_bucket;   // 0..NUM_PATHS-1
+    bit<8> ecmp_bucket;     // 0..NUM_PATHS-1
+    bit<32> flowlet_idx;    // Index into flowlet registers
 }
 
 struct headers {
@@ -100,7 +108,7 @@ struct headers {
 }
 
 /*************************************************************************
-*********************** P A R S E R  *************************************
+************************ P A R S E R *************************************
 *************************************************************************/
 
 parser MyParser(packet_in packet,
@@ -160,7 +168,7 @@ parser MyParser(packet_in packet,
 
 
 /*************************************************************************
-************   C H E C K S U M    V E R I F I C A T I O N   *************
+**************** C H E C K S U M  V E R I F I C A T I O N ****************
 *************************************************************************/
 
 control MyVerifyChecksum(inout headers hdr, inout metadata meta) {
@@ -169,7 +177,7 @@ control MyVerifyChecksum(inout headers hdr, inout metadata meta) {
 
 
 /*************************************************************************
-**************  I N G R E S S   P R O C E S S I N G   *******************
+***************** I N G R E S S  P R O C E S S I N G *********************
 *************************************************************************/
 
 control MyIngress(inout headers hdr,
@@ -241,6 +249,40 @@ control MyIngress(inout headers hdr,
         meta.ecmp_bucket = (bit<8>) h;
     }
 
+    // Compute index into flowlet registers from the 5-tuple
+    action compute_flowlet_index() {
+        bit<32> h;
+        bit<16> l4src = hdr.tcp.isValid() ? hdr.tcp.srcPort
+                    : (hdr.udp.isValid() ? hdr.udp.srcPort : (bit<16>)0);
+        bit<16> l4dst = hdr.tcp.isValid() ? hdr.tcp.dstPort
+                    : (hdr.udp.isValid() ? hdr.udp.dstPort : (bit<16>)0);
+        hash(h, HashAlgorithm.crc32, (bit<32>)0,
+            { hdr.ipv4.srcAddr, hdr.ipv4.dstAddr, hdr.ipv4.protocol, l4src, l4dst },
+            FLOWLET_SLOTS);
+        meta.flowlet_idx = h;
+    }
+
+    // Pick a fresh ECMP bucket for flowlet switching
+    action pick_new_bucket(bit<48> now_ts) {
+        bit<32> h;
+        bit<16> l4src = hdr.tcp.isValid() ? hdr.tcp.srcPort
+                    : (hdr.udp.isValid() ? hdr.udp.srcPort : (bit<16>)0);
+        bit<16> l4dst = hdr.tcp.isValid() ? hdr.tcp.dstPort
+                    : (hdr.udp.isValid() ? hdr.udp.dstPort : (bit<16>)0);
+
+        // Include low 16 bits of timestamp to vary choice across flowlets
+        bit<16> ts16 = (bit<16>) (now_ts & 0xffff);
+
+        hash(h, HashAlgorithm.crc32, (bit<32>)0,
+            { hdr.ipv4.srcAddr, hdr.ipv4.dstAddr, hdr.ipv4.protocol, l4src, l4dst, ts16 },
+            NUM_PATHS);
+        meta.ecmp_bucket = (bit<8>) h;
+
+        // Update registers
+        last_bucket.write(meta.flowlet_idx, meta.ecmp_bucket);
+        last_timestamp.write(meta.flowlet_idx, now_ts);
+    }
+
     // Action to strip first_hop header and restore EtherType to TYPE_LB_META
     action strip_first_hop() {
         hdr.first_hop.setInvalid();
@@ -280,6 +322,30 @@ control MyIngress(inout headers hdr,
             if (hdr.first_hop.isValid() && hdr.first_hop.tag == 1) {
                 if (hdr.lb_meta.mode == 1) { compute_ecmp_hash(); }             // Per-flow ECMP
                 else if (hdr.lb_meta.mode == 2) { compute_per_packet_hash(); }  // Per-packet
+                else if (hdr.lb_meta.mode == 3) {                               // Flowlet
+                    compute_flowlet_index();
+
+                    bit<48> now_ts = standard_metadata.ingress_global_timestamp; // Microseconds in BMv2
+                    bit<48> prev_ts;
+                    bit<8>  keep_bucket;
+
+                    last_timestamp.read(prev_ts, meta.flowlet_idx);
+                    last_bucket.read(keep_bucket, meta.flowlet_idx);
+                    
+                    // Compute time delta since last packet in this flowlet
+                    bit<48> delta = now_ts - prev_ts;
+
+                    if (delta > (bit<48>) FLOWLET_GAP_US || prev_ts == (bit<48>)0) {
+                        // New flowlet: choose a (possibly) new path
+                        pick_new_bucket(now_ts);
+                    } 
+                    else {
+                        // Same flowlet: reuse prior path
+                        meta.ecmp_bucket = keep_bucket;
+                        // Update last_timestamp so the gap is measured from most recent packet
+                        last_timestamp.write(meta.flowlet_idx, now_ts);
+                    }
+                }
                 ecmp_select.apply();
                 strip_first_hop();
             }
@@ -292,7 +358,7 @@ control MyIngress(inout headers hdr,
 }
 
 /*************************************************************************
-****************  E G R E S S   P R O C E S S I N G   *******************
+****************** E G R E S S   P R O C E S S I N G *********************
 *************************************************************************/
 
 control MyEgress(inout headers hdr,
@@ -327,7 +393,7 @@ control MyEgress(inout headers hdr,
 }
 
 /*************************************************************************
-*************   C H E C K S U M    C O M P U T A T I O N   **************
+**************** C H E C K S U M    C O M P U T A T I O N ****************
 *************************************************************************/
 
 control MyComputeChecksum(inout headers hdr, inout metadata meta) {
@@ -352,8 +418,7 @@ control MyComputeChecksum(inout headers hdr, inout metadata meta) {
 
 
 /*************************************************************************
-***********************  D E P A R S E R  *******************************
-* The deparser serializes headers back onto the packet in order.         *
+************************* D E P A R S E R ********************************
 *************************************************************************/
 
 control MyDeparser(packet_out packet, in headers hdr) {
@@ -370,7 +435,7 @@ control MyDeparser(packet_out packet, in headers hdr) {
 }
 
 /*************************************************************************
-***********************  S W I T C H  ***********************************
+************************** S W I T C H ***********************************
 *************************************************************************/
 
 V1Switch(
