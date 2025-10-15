@@ -1,0 +1,199 @@
+
+===== New Run: 2025-10-14 17:55:27 CDT =====
+[i] Using random seed = 1760482527
+[i] Using iface=eth0
+[i] Querying S1 for port byte counters...
+[i] Baseline S1 bytes: port2=0, port3=0
+[i] Flow 1: UDP 42657 → 31602, 7 pkts, 206B, flow_id=509616187
+[i] Flow 2: TCP 17467 → 5591, 21 pkts, 319B, flow_id=889141624
+[i] Flow 3: UDP 54902 → 22427, 21 pkts, 553B, flow_id=1718533226
+[i] Flow 4: TCP 16796 → 3344, 19 pkts, 354B, flow_id=3427868164
+[i] Flow 5: UDP 20298 → 16661, 9 pkts, 209B, flow_id=1367130464
+[i] Flow 6: UDP 43040 → 50508, 14 pkts, 118B, flow_id=1099657421
+[i] Flow 7: TCP 40175 → 33143, 28 pkts, 371B, flow_id=1976911364
+[i] Flow 8: TCP 7556 → 8813, 22 pkts, 180B, flow_id=3013147975
+[i] Flow 9: UDP 48226 → 45009, 27 pkts, 149B, flow_id=725761735
+[i] Flow 10: TCP 38396 → 54484, 25 pkts, 193B, flow_id=1861723834
+[i] Flow 11: TCP 21387 → 52500, 14 pkts, 461B, flow_id=221044368
+[i] Flow 12: UDP 1676 → 38486, 13 pkts, 208B, flow_id=597212622
+[i] Flow 13: UDP 6441 → 60888, 22 pkts, 122B, flow_id=2725570913
+[i] Flow 14: TCP 20951 → 33236, 17 pkts, 555B, flow_id=2435042402
+[i] Flow 15: TCP 35110 → 29583, 26 pkts, 361B, flow_id=3851730730
+[i] Flow 16: UDP 53199 → 26361, 21 pkts, 93B, flow_id=3381516861
+[i] Flow 17: UDP 13219 → 61270, 11 pkts, 474B, flow_id=701670040
+[i] Flow 18: TCP 19062 → 61434, 26 pkts, 368B, flow_id=17673749
+[i] Flow 19: TCP 13446 → 65436, 12 pkts, 124B, flow_id=3682978033
+[i] Flow 20: TCP 32989 → 55852, 30 pkts, 313B, flow_id=1011788493
+[i] Flow 21: TCP 22682 → 46849, 8 pkts, 325B, flow_id=2475439373
+[i] Flow 22: UDP 35205 → 1306, 22 pkts, 69B, flow_id=436855629
+[i] Flow 23: UDP 4323 → 18685, 11 pkts, 156B, flow_id=2209873880
+[i] Flow 24: UDP 38549 → 49773, 14 pkts, 122B, flow_id=1377701556
+[i] Flow 25: UDP 10613 → 16787, 15 pkts, 474B, flow_id=580468544
+[i] Flow 26: TCP 64822 → 62600, 9 pkts, 335B, flow_id=2108483943
+[i] Flow 27: UDP 35079 → 37715, 18 pkts, 432B, flow_id=4250325048
+[i] Flow 28: UDP 34417 → 27991, 13 pkts, 173B, flow_id=853590430
+[i] Flow 29: UDP 11813 → 33877, 21 pkts, 477B, flow_id=1291029237
+[i] Flow 30: TCP 39608 → 43498, 18 pkts, 179B, flow_id=3710790874
+[i] Flow 31: UDP 51692 → 56763, 19 pkts, 68B, flow_id=3951547132
+[i] Flow 32: TCP 8369 → 33235, 5 pkts, 396B, flow_id=686235567
+[i] Flow 33: UDP 21550 → 14003, 9 pkts, 200B, flow_id=3174445846
+[i] Flow 34: TCP 48320 → 27445, 28 pkts, 146B, flow_id=1789552323
+[i] Flow 35: UDP 26408 → 37556, 9 pkts, 64B, flow_id=2238096220
+[i] Flow 36: UDP 4521 → 32225, 5 pkts, 202B, flow_id=8242017
+[i] Flow 37: TCP 33215 → 53788, 21 pkts, 167B, flow_id=2772356620
+[i] Flow 38: TCP 30005 → 35159, 12 pkts, 216B, flow_id=2874779645
+[i] Flow 39: TCP 8051 → 65409, 9 pkts, 530B, flow_id=120411795
+[i] Flow 40: TCP 43306 → 43720, 11 pkts, 595B, flow_id=4248642150
+[i] Flow 41: UDP 60238 → 19484, 29 pkts, 139B, flow_id=342503125
+[i] Flow 42: TCP 64339 → 17928, 7 pkts, 599B, flow_id=1680668540
+[i] Flow 43: UDP 3029 → 50270, 12 pkts, 529B, flow_id=3563164625
+[i] Flow 44: TCP 32075 → 16681, 12 pkts, 268B, flow_id=4172139577
+[i] Flow 45: UDP 34695 → 5803, 28 pkts, 583B, flow_id=3384436533
+[i] Flow 46: TCP 65186 → 14566, 10 pkts, 569B, flow_id=1232312448
+[i] Flow 47: UDP 10923 → 42749, 6 pkts, 460B, flow_id=3816890373
+[i] Flow 48: UDP 2644 → 60019, 17 pkts, 111B, flow_id=580023578
+[i] Flow 49: TCP 1793 → 59825, 9 pkts, 69B, flow_id=3591640961
+[i] Flow 50: TCP 31724 → 13485, 10 pkts, 266B, flow_id=2381378758
+[i] Querying S1 for port byte counters...
+
+------- ECMP Load-Balance Report -------
+Load balancing mode = per-flow ECMP
+Packets sent: 802
+Total bytes (as counted at S1 egress): 274116
+Upper path (port 3): 113080 bytes
+Lower path (port 2): 161036 bytes
+Split: port3=41.25%  |  port2=58.75%
+============================================
+
+===== New Run: 2025-10-14 17:57:34 CDT =====
+[i] Using random seed = 1760482654
+[i] Using iface=eth0
+[i] Querying S1 for port byte counters...
+[i] Baseline S1 bytes: port2=161036, port3=113080
+[i] Flow 1: TCP 27171 → 61450, 10 pkts, 573B, flow_id=3745622930
+[i] Flow 2: TCP 58735 → 44200, 23 pkts, 180B, flow_id=4043816820
+[i] Flow 3: TCP 18021 → 46780, 29 pkts, 554B, flow_id=2283699287
+[i] Flow 4: TCP 62853 → 27472, 27 pkts, 512B, flow_id=2002378627
+[i] Flow 5: UDP 57931 → 21334, 15 pkts, 405B, flow_id=1347306007
+[i] Flow 6: UDP 11000 → 13748, 18 pkts, 522B, flow_id=705904169
+[i] Flow 7: UDP 64599 → 3073, 16 pkts, 355B, flow_id=729473980
+[i] Flow 8: TCP 59726 → 37461, 22 pkts, 496B, flow_id=3162686991
+[i] Flow 9: TCP 52508 → 60127, 12 pkts, 347B, flow_id=435333410
+[i] Flow 10: UDP 38979 → 29536, 18 pkts, 275B, flow_id=1615248704
+[i] Flow 11: TCP 7830 → 26156, 14 pkts, 540B, flow_id=4140147136
+[i] Flow 12: UDP 3539 → 19657, 29 pkts, 146B, flow_id=150661984
+[i] Flow 13: TCP 51149 → 24219, 25 pkts, 308B, flow_id=85658200
+[i] Flow 14: UDP 7710 → 16870, 17 pkts, 294B, flow_id=1104544877
+[i] Flow 15: TCP 21872 → 7886, 26 pkts, 498B, flow_id=825100026
+[i] Flow 16: UDP 29815 → 9797, 26 pkts, 358B, flow_id=344428999
+[i] Flow 17: UDP 9632 → 5296, 12 pkts, 288B, flow_id=1650418628
+[i] Flow 18: TCP 33831 → 49516, 28 pkts, 350B, flow_id=368499512
+[i] Flow 19: TCP 34446 → 54281, 17 pkts, 181B, flow_id=3527467776
+[i] Flow 20: UDP 63853 → 4109, 11 pkts, 358B, flow_id=3896131815
+[i] Flow 21: UDP 5512 → 3769, 13 pkts, 305B, flow_id=2531555830
+[i] Flow 22: TCP 20686 → 59660, 18 pkts, 184B, flow_id=1183250267
+[i] Flow 23: TCP 57310 → 29774, 15 pkts, 211B, flow_id=4113664620
+[i] Flow 24: TCP 27742 → 9229, 15 pkts, 242B, flow_id=306253582
+[i] Flow 25: UDP 52003 → 54362, 14 pkts, 497B, flow_id=3612349197
+[i] Flow 26: UDP 6539 → 16674, 18 pkts, 136B, flow_id=2223740944
+[i] Flow 27: UDP 3392 → 55609, 28 pkts, 388B, flow_id=1135330234
+[i] Flow 28: UDP 40748 → 13184, 16 pkts, 89B, flow_id=1522611482
+[i] Flow 29: TCP 27286 → 54666, 13 pkts, 546B, flow_id=2362666276
+[i] Flow 30: UDP 41663 → 26343, 6 pkts, 136B, flow_id=3804501314
+[i] Flow 31: TCP 64274 → 53671, 16 pkts, 291B, flow_id=2678557363
+[i] Flow 32: TCP 10729 → 51629, 24 pkts, 561B, flow_id=3153432362
+[i] Flow 33: UDP 56767 → 10363, 30 pkts, 497B, flow_id=2419884970
+[i] Flow 34: TCP 20439 → 31076, 19 pkts, 148B, flow_id=2939713120
+[i] Flow 35: TCP 15632 → 41578, 6 pkts, 443B, flow_id=1571796846
+[i] Flow 36: TCP 8131 → 43688, 17 pkts, 590B, flow_id=3942764684
+[i] Flow 37: UDP 11193 → 49646, 7 pkts, 218B, flow_id=3915108107
+[i] Flow 38: UDP 50393 → 55281, 24 pkts, 467B, flow_id=370298501
+[i] Flow 39: TCP 55113 → 42371, 22 pkts, 575B, flow_id=233418026
+[i] Flow 40: UDP 15044 → 57496, 27 pkts, 463B, flow_id=3129074945
+[i] Flow 41: UDP 15971 → 49753, 13 pkts, 434B, flow_id=3511035114
+[i] Flow 42: UDP 62999 → 17055, 23 pkts, 65B, flow_id=1507356123
+[i] Flow 43: UDP 7479 → 56968, 7 pkts, 530B, flow_id=3009867327
+[i] Flow 44: TCP 20800 → 1110, 13 pkts, 76B, flow_id=1296905822
+[i] Flow 45: TCP 36195 → 28229, 29 pkts, 214B, flow_id=3176666517
+[i] Flow 46: UDP 64516 → 59223, 27 pkts, 266B, flow_id=3744790735
+[i] Flow 47: UDP 50673 → 16850, 7 pkts, 306B, flow_id=707852305
+[i] Flow 48: UDP 46541 → 33105, 30 pkts, 381B, flow_id=235430440
+[i] Flow 49: TCP 36713 → 22513, 21 pkts, 317B, flow_id=3279149446
+[i] Flow 50: UDP 32654 → 16677, 16 pkts, 348B, flow_id=2330618601
+[i] Querying S1 for port byte counters...
+
+------- ECMP Load-Balance Report -------
+Load balancing mode = per-packet
+Packets sent: 929
+Total bytes (as counted at S1 egress): 381982
+Upper path (port 3): 188675 bytes
+Lower path (port 2): 193307 bytes
+Split: port3=49.39%  |  port2=50.61%
+============================================
+
+===== New Run: 2025-10-14 18:15:01 CDT =====
+[i] Using random seed = 1760483701
+[i] Using iface=eth0
+[i] Flowlet constraints: FLOWLET_GAP_MS=30.0, PATH_DIFF_MS=58.0
+[i] Querying S1 for port byte counters...
+[i] Baseline S1 bytes: port2=354343, port3=301755
+[i] Flow 1: UDP 1112 → 27502, 24 pkts (bursts=2, ppb=12, gap≈50.9ms), 512B, flow_id=2336091982
+[i] Flow 2: TCP 22526 → 56879, 24 pkts (bursts=2, ppb=12, gap≈56.7ms), 100B, flow_id=1320939264
+[i] Flow 3: TCP 44128 → 40743, 15 pkts (bursts=1, ppb=15, gap≈35.5ms), 127B, flow_id=885667084
+[i] Flow 4: UDP 61717 → 2891, 26 pkts (bursts=2, ppb=13, gap≈38.2ms), 189B, flow_id=2502152740
+[i] Flow 5: UDP 44209 → 45334, 27 pkts (bursts=3, ppb=9, gap≈48.2ms), 436B, flow_id=112776870
+[i] Flow 6: UDP 25917 → 38376, 39 pkts (bursts=3, ppb=13, gap≈55.7ms), 275B, flow_id=1365086536
+[i] Flow 7: TCP 42681 → 61191, 36 pkts (bursts=3, ppb=12, gap≈37.3ms), 339B, flow_id=1280286392
+[i] Flow 8: TCP 36126 → 6196, 14 pkts (bursts=2, ppb=7, gap≈42.7ms), 407B, flow_id=2184691167
+[i] Flow 9: UDP 6257 → 11835, 28 pkts (bursts=2, ppb=14, gap≈33.1ms), 537B, flow_id=111261105
+[i] Flow 10: TCP 35081 → 6349, 6 pkts (bursts=1, ppb=6, gap≈34.0ms), 199B, flow_id=3465498918
+[i] Flow 11: UDP 9851 → 26068, 16 pkts (bursts=2, ppb=8, gap≈41.0ms), 249B, flow_id=3103075651
+[i] Flow 12: UDP 23955 → 26517, 22 pkts (bursts=2, ppb=11, gap≈45.4ms), 97B, flow_id=1079832775
+[i] Flow 13: UDP 45321 → 31958, 12 pkts (bursts=2, ppb=6, gap≈45.5ms), 178B, flow_id=860808805
+[i] Flow 14: UDP 13125 → 44834, 45 pkts (bursts=3, ppb=15, gap≈54.1ms), 578B, flow_id=3086393582
+[i] Flow 15: TCP 40020 → 10098, 15 pkts (bursts=3, ppb=5, gap≈51.9ms), 316B, flow_id=714200404
+[i] Flow 16: UDP 57282 → 41131, 6 pkts (bursts=1, ppb=6, gap≈37.4ms), 481B, flow_id=2886323276
+[i] Flow 17: TCP 38386 → 24391, 45 pkts (bursts=3, ppb=15, gap≈33.3ms), 382B, flow_id=4161296499
+[i] Flow 18: TCP 23262 → 22665, 16 pkts (bursts=2, ppb=8, gap≈35.5ms), 370B, flow_id=2200216930
+[i] Flow 19: TCP 53932 → 8595, 21 pkts (bursts=3, ppb=7, gap≈38.7ms), 88B, flow_id=2942492125
+[i] Flow 20: UDP 21687 → 13103, 22 pkts (bursts=2, ppb=11, gap≈52.4ms), 554B, flow_id=1440526012
+[i] Flow 21: TCP 26891 → 50032, 42 pkts (bursts=3, ppb=14, gap≈43.5ms), 106B, flow_id=3858131732
+[i] Flow 22: UDP 42384 → 50478, 13 pkts (bursts=1, ppb=13, gap≈32.3ms), 134B, flow_id=2452494557
+[i] Flow 23: UDP 34484 → 25464, 30 pkts (bursts=2, ppb=15, gap≈52.9ms), 289B, flow_id=1033219393
+[i] Flow 24: UDP 46269 → 35771, 20 pkts (bursts=2, ppb=10, gap≈56.7ms), 439B, flow_id=333408658
+[i] Flow 25: TCP 23350 → 12084, 12 pkts (bursts=1, ppb=12, gap≈55.4ms), 475B, flow_id=3688269545
+[i] Flow 26: UDP 16064 → 19956, 22 pkts (bursts=2, ppb=11, gap≈30.5ms), 460B, flow_id=2287363484
+[i] Flow 27: TCP 6620 → 61056, 22 pkts (bursts=2, ppb=11, gap≈41.4ms), 405B, flow_id=38332149
+[i] Flow 28: TCP 42171 → 3258, 24 pkts (bursts=3, ppb=8, gap≈33.3ms), 78B, flow_id=2849574917
+[i] Flow 29: UDP 45060 → 44169, 13 pkts (bursts=1, ppb=13, gap≈49.6ms), 138B, flow_id=575136919
+[i] Flow 30: UDP 20302 → 11313, 15 pkts (bursts=1, ppb=15, gap≈45.8ms), 84B, flow_id=3196070741
+[i] Flow 31: TCP 40011 → 37900, 30 pkts (bursts=3, ppb=10, gap≈37.7ms), 423B, flow_id=159405328
+[i] Flow 32: TCP 41988 → 10520, 11 pkts (bursts=1, ppb=11, gap≈50.7ms), 77B, flow_id=2996306910
+[i] Flow 33: TCP 23501 → 32121, 14 pkts (bursts=2, ppb=7, gap≈48.7ms), 280B, flow_id=3374259096
+[i] Flow 34: UDP 8431 → 11601, 9 pkts (bursts=1, ppb=9, gap≈50.7ms), 340B, flow_id=2240317095
+[i] Flow 35: TCP 27632 → 45955, 15 pkts (bursts=3, ppb=5, gap≈54.3ms), 520B, flow_id=88844322
+[i] Flow 36: UDP 60890 → 52479, 14 pkts (bursts=2, ppb=7, gap≈36.1ms), 544B, flow_id=1534075281
+[i] Flow 37: TCP 34247 → 1440, 21 pkts (bursts=3, ppb=7, gap≈50.3ms), 314B, flow_id=315321064
+[i] Flow 38: UDP 14644 → 10345, 33 pkts (bursts=3, ppb=11, gap≈54.0ms), 502B, flow_id=113970461
+[i] Flow 39: TCP 39132 → 18451, 18 pkts (bursts=3, ppb=6, gap≈55.7ms), 415B, flow_id=1701828045
+[i] Flow 40: UDP 21960 → 41482, 7 pkts (bursts=1, ppb=7, gap≈56.0ms), 492B, flow_id=795342240
+[i] Flow 41: UDP 1520 → 2484, 30 pkts (bursts=2, ppb=15, gap≈57.8ms), 481B, flow_id=4098857637
+[i] Flow 42: TCP 47303 → 17990, 33 pkts (bursts=3, ppb=11, gap≈34.7ms), 309B, flow_id=1600419283
+[i] Flow 43: UDP 44733 → 14747, 20 pkts (bursts=2, ppb=10, gap≈31.3ms), 215B, flow_id=4252553555
+[i] Flow 44: TCP 42915 → 2522, 42 pkts (bursts=3, ppb=14, gap≈44.5ms), 539B, flow_id=1605140612
+[i] Flow 45: TCP 42240 → 60656, 28 pkts (bursts=2, ppb=14, gap≈43.5ms), 133B, flow_id=3298379441
+[i] Flow 46: UDP 36343 → 9301, 27 pkts (bursts=3, ppb=9, gap≈49.7ms), 276B, flow_id=205177965
+[i] Flow 47: TCP 42627 → 10946, 21 pkts (bursts=3, ppb=7, gap≈41.2ms), 475B, flow_id=1787716354
+[i] Flow 48: TCP 36579 → 58075, 5 pkts (bursts=1, ppb=5, gap≈46.8ms), 532B, flow_id=3762941328
+[i] Flow 49: TCP 57362 → 6396, 15 pkts (bursts=3, ppb=5, gap≈43.6ms), 99B, flow_id=787999046
+[i] Flow 50: TCP 2406 → 49599, 7 pkts (bursts=1, ppb=7, gap≈38.1ms), 249B, flow_id=3268763208
+[i] Querying S1 for port byte counters...
+
+------- ECMP Load-Balance Report -------
+Load balancing mode = flowlet switching
+Packets sent: 1072
+Total bytes (as counted at S1 egress): 420379
+Upper path (port 3): 195552 bytes
+Lower path (port 2): 224827 bytes
+Split: port3=46.52%  |  port2=53.48%
+============================================

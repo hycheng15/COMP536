@@ -19,7 +19,7 @@ register<bit<64>>(PORTS_MAX) port_bytes;
 
 // Registers to store flowlet metadata
 const bit<32> FLOWLET_SLOTS = 1024;                 // Hash table size for flowlets
-const bit<32> FLOWLET_GAP_US = 30000;                  // 30 ms idle gap between flowlet packets
+const bit<32> FLOWLET_GAP_US = 30000;               // 30 ms idle gap between flowlet packets
 register<bit<48>>(FLOWLET_SLOTS) last_timestamp;    // Last packet timestamp per flowlet
 register<bit<8>>(FLOWLET_SLOTS) last_bucket;        // Last selected ECMP bucket per flowlet
 
@@ -72,7 +72,7 @@ header udp_t {
     bit<16> checksum;
 }
 
-// First hop header tag for ECMP
+// First hop header tag for load balancing
 // S1 removes this header and forwards the packet as usual
 header first_hop_t {
     // Use bit<8> for alignment purposes

@@ -7,8 +7,27 @@ import sys
 
 from scapy.all import *
 
-QUERY_ETYPE = 0x1235
+# ===== Define custom headers =====
 
+FIRST_HOP_ETYPE = 0x1234
+LB_META_ETYPE = 0x1235
+QUERY_ETYPE = 0x1236
+
+# LoadBalancing header corresponds to lb_meta_t in P4
+class LoadBalancing(Packet):
+    name = "LoadBalancing"
+    fields_desc = [
+        ByteField("mode", 1),      # 1 per-flow ECMP, 2 per-packet, 3 flowlet switching
+        IntField("flow_id", 0),
+        IntField("seq", 0),
+    ]
+
+# First-hop header corresponds to first_hop_t in P4
+class FirstHop(Packet):
+    name = "FirstHop"
+    fields_desc = [ ByteField("tag", 1) ]   # 1 means should be processed by S1
+
+# Query header corresponds to query_t in P4
 class Query(Packet):
     name = "Query"
     fields_desc = [
@@ -16,7 +35,20 @@ class Query(Packet):
         LongField("port_3_bytes", 0)
     ]
 
+# Bind the custom Ethertypes
+
+# For H1 → S1
+bind_layers(Ether, FirstHop, type=FIRST_HOP_ETYPE)
+bind_layers(FirstHop, LoadBalancing)
+bind_layers(LoadBalancing, IP)
+
+# For S1 → … → H2
+bind_layers(Ether, LoadBalancing, type=LB_META_ETYPE)
+bind_layers(LoadBalancing, IP)
+
+# For querying S1
 bind_layers(Ether, Query, type=QUERY_ETYPE)
+bind_layers(FirstHop, IP)
 
 def get_if():
     ifs = get_if_list()
