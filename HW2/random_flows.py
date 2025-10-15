@@ -113,7 +113,7 @@ def main():
     header = f"\n===== New Run: {now} ====="
     out(header)
 
-    ap = argparse.ArgumentParser(description="Send random flows and measure ECMP split")
+    ap = argparse.ArgumentParser(description="Send random flows and measure traffic split using different load balancing modes")
     ap.add_argument("--dst", default="10.0.2.2", help="Receiver IP (H2)")
     ap.add_argument("--mode",type=int,choices=[1, 2, 3], required=True, help="Load balancing mode: 1=per-flow ECMP, 2=per-packet, 3=flowlet switching")
     ap.add_argument("--flows", type=int, default=50, help="# of flows")
@@ -175,7 +175,7 @@ def main():
             # Mode 3: flowlet switching - multiple bursts with gaps
             bursts = random.randint(1, 3)
             ppb = random.randint(5, 15)
-            
+
             # Pick a gap that satisfies: FLOWLET_GAP_MS < gap_ms < PATH_DIFF_MS
             gap_ms = random.uniform(FLOWLET_GAP_MS, PATH_DIFF_MS)
 
@@ -207,7 +207,7 @@ def main():
     d3 = a3 - b3
     total_bytes_from_src = d2 + d3
 
-    out("\n------- ECMP Load-Balance Report -------")
+    out("\n------- Load-Balance Report -------")
     out(f"Load balancing mode = {mode_name}")
     out(f"Packets sent: {sent_pkts}")
     out(f"Total bytes (as counted at S1 egress): {total_bytes_from_src}")
