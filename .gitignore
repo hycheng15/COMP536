@@ -58,3 +58,4 @@ dkms.conf
 */.DS_Store
 .DS_Store
 *.ova
+__pycache__
